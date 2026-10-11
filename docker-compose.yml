@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: aid
+      POSTGRES_PASSWORD: aid
+      POSTGRES_DB: aidroute
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aid -d aidroute"]
+      interval: 5s
+      retries: 10
+
+volumes:
+  pgdata:
