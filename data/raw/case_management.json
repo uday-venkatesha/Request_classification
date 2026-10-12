@@ -1,0 +1,4802 @@
+[
+  {
+    "case_ref": "CASE-0001",
+    "submission_id": "SUB-1291",
+    "volunteer_email": "lucas.khan45@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-09-19T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0002",
+    "submission_id": "SUB-1080",
+    "volunteer_email": "wei.ali48@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0003",
+    "submission_id": "SUB-1171",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-11-10T00:00:00",
+    "closed": "2025-11-13T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0004",
+    "submission_id": "SUB-1165",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-12T00:00:00",
+    "closed": "2025-07-02T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0005",
+    "submission_id": "SUB-1404",
+    "volunteer_email": "JAMES.NGUYEN34@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2026-02-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0006",
+    "submission_id": "SUB-1533",
+    "volunteer_email": "emily.johnson57@example.org",
+    "outcome": "declined",
+    "opened": "2025-04-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0007",
+    "submission_id": "SUB-1240",
+    "volunteer_email": "MARIA.NGUYEN32@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-12-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0008",
+    "submission_id": "SUB-1170",
+    "volunteer_email": "aisha.chen50@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-02T00:00:00",
+    "closed": "2025-02-20T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0009",
+    "submission_id": "SUB-1055",
+    "volunteer_email": "kwame.patel3@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0010",
+    "submission_id": "SUB-1106",
+    "volunteer_email": "daniel.khan33@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-13T00:00:00",
+    "closed": "2025-02-23T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0011",
+    "submission_id": "SUB-1234",
+    "volunteer_email": "priya.nguyen31@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-15T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0012",
+    "submission_id": "SUB-1539",
+    "volunteer_email": "omar.nguyen21@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-12-06T00:00:00",
+    "closed": "2026-01-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0013",
+    "submission_id": "SUB-1487",
+    "volunteer_email": "carlos.smith59@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0014",
+    "submission_id": "SUB-1138",
+    "volunteer_email": "sarah.chen69@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-11-02T00:00:00",
+    "closed": "2025-11-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0015",
+    "submission_id": "SUB-1546",
+    "volunteer_email": "carlos.nguyen39@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0016",
+    "submission_id": "SUB-1452",
+    "volunteer_email": "carlos.nguyen39@example.org",
+    "outcome": "accepted",
+    "opened": "2025-05-14T00:00:00",
+    "closed": "2025-05-15T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0017",
+    "submission_id": "SUB-1535",
+    "volunteer_email": "raj.brown17@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-29T00:00:00",
+    "closed": "2025-09-23T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0018",
+    "submission_id": "SUB-1488",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "accepted",
+    "opened": "2025-08-09T00:00:00",
+    "closed": "2025-09-04T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0019",
+    "submission_id": "SUB-1007",
+    "volunteer_email": "fatima.johnson70@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-07-30T00:00:00",
+    "closed": "2025-08-12T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0020",
+    "submission_id": "SUB-1255",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0021",
+    "submission_id": "SUB-1225",
+    "volunteer_email": "daniel.khan33@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-11-17T00:00:00",
+    "closed": "2025-11-27T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0022",
+    "submission_id": "SUB-1544",
+    "volunteer_email": "JAMES.NGUYEN34@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-05T00:00:00",
+    "closed": "2025-02-09T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0023",
+    "submission_id": "SUB-1466",
+    "volunteer_email": "david.patel79@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0024",
+    "submission_id": "SUB-1328",
+    "volunteer_email": "daniel.chen2@example.org",
+    "outcome": null,
+    "opened": "2025-10-01T00:00:00",
+    "closed": "2025-10-05T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0025",
+    "submission_id": "SUB-1288",
+    "volunteer_email": "JAMES.NGUYEN34@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-08-13T00:00:00",
+    "closed": "2025-08-16T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0026",
+    "submission_id": "SUB-1154",
+    "volunteer_email": "PRIYA.NGUYEN1@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-25T00:00:00",
+    "closed": "2025-07-07T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0027",
+    "submission_id": "SUB-1474",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "declined",
+    "opened": "2026-01-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0028",
+    "submission_id": "SUB-1272",
+    "volunteer_email": "aisha.chen50@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-29T00:00:00",
+    "closed": "2025-09-25T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0029",
+    "submission_id": "SUB-1390",
+    "volunteer_email": "PRIYA.NGUYEN1@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2026-01-29T00:00:00",
+    "closed": "2026-02-23T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0030",
+    "submission_id": "SUB-1453",
+    "volunteer_email": "priya.nguyen31@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-18T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0031",
+    "submission_id": "SUB-1533",
+    "volunteer_email": "emily.smith26@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-15T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0032",
+    "submission_id": "SUB-1162",
+    "volunteer_email": "omar.patel5@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-09T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0033",
+    "submission_id": "SUB-1492",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0034",
+    "submission_id": "SUB-1115",
+    "volunteer_email": "lena.johnson30@example.org",
+    "outcome": null,
+    "opened": "2025-06-16T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0035",
+    "submission_id": "SUB-1282",
+    "volunteer_email": "omar.patel74@example.org",
+    "outcome": null,
+    "opened": "2025-05-05T00:00:00",
+    "closed": "2025-05-07T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0036",
+    "submission_id": "SUB-1595",
+    "volunteer_email": "carlos.ali60@example.org",
+    "outcome": "declined",
+    "opened": "2025-03-21T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0037",
+    "submission_id": "SUB-1254",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-18T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0038",
+    "submission_id": "SUB-1061",
+    "volunteer_email": "lucas.khan45@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0039",
+    "submission_id": "SUB-1128",
+    "volunteer_email": "james.johnson62@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-10-13T00:00:00",
+    "closed": "2025-11-08T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0040",
+    "submission_id": "SUB-1449",
+    "volunteer_email": "raj.lopez24@example.org",
+    "outcome": "accepted",
+    "opened": "2025-07-13T00:00:00",
+    "closed": "2025-07-22T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0041",
+    "submission_id": "SUB-1040",
+    "volunteer_email": "james.johnson62@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0042",
+    "submission_id": "SUB-1194",
+    "volunteer_email": "emily.ali72@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0043",
+    "submission_id": "SUB-1281",
+    "volunteer_email": "emily.brown76@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-11T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0044",
+    "submission_id": "SUB-1460",
+    "volunteer_email": "omar.chen37@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0045",
+    "submission_id": "SUB-1518",
+    "volunteer_email": "wei.ali48@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-10T00:00:00",
+    "closed": "2025-02-04T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0046",
+    "submission_id": "SUB-1244",
+    "volunteer_email": "LENA.KHAN41@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-12-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0047",
+    "submission_id": "SUB-1194",
+    "volunteer_email": "MARIA.ALI67@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2026-01-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0048",
+    "submission_id": "SUB-1330",
+    "volunteer_email": "wei.garcia52@example.org",
+    "outcome": "declined",
+    "opened": "2025-02-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0049",
+    "submission_id": "SUB-1044",
+    "volunteer_email": "james.patel16@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-17T00:00:00",
+    "closed": "2025-01-24T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0050",
+    "submission_id": "SUB-1101",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-07-18T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0051",
+    "submission_id": "SUB-1050",
+    "volunteer_email": "SARAH.PATEL46@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2026-01-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0052",
+    "submission_id": "SUB-1503",
+    "volunteer_email": "carlos.ali10@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0053",
+    "submission_id": "SUB-1377",
+    "volunteer_email": "MEI.NGUYEN7@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-05-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0054",
+    "submission_id": "SUB-1311",
+    "volunteer_email": "wei.brown9@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0055",
+    "submission_id": "SUB-1544",
+    "volunteer_email": "PRIYA.KHAN49@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-09-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0056",
+    "submission_id": "SUB-1571",
+    "volunteer_email": "sofia.patel71@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-24T00:00:00",
+    "closed": "2025-03-18T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0057",
+    "submission_id": "SUB-1469",
+    "volunteer_email": "daniel.brown54@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-03-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0058",
+    "submission_id": "SUB-1516",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-10-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0059",
+    "submission_id": "SUB-1360",
+    "volunteer_email": "maria.johnson40@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-16T00:00:00",
+    "closed": "2025-07-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0060",
+    "submission_id": "SUB-1440",
+    "volunteer_email": "LENA.KHAN41@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-10-16T00:00:00",
+    "closed": "2025-11-10T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0061",
+    "submission_id": "SUB-1563",
+    "volunteer_email": "MARIA.NGUYEN32@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-08-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0062",
+    "submission_id": "SUB-1000",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": null,
+    "opened": "2025-11-02T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0063",
+    "submission_id": "SUB-1138",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-04-24T00:00:00",
+    "closed": "2025-04-25T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0064",
+    "submission_id": "SUB-1282",
+    "volunteer_email": "fatima.johnson70@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0065",
+    "submission_id": "SUB-1096",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-03-21T00:00:00",
+    "closed": "2025-04-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0066",
+    "submission_id": "SUB-1596",
+    "volunteer_email": "priya.nguyen31@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0067",
+    "submission_id": "SUB-1582",
+    "volunteer_email": "KWAME.PATEL27@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2026-01-06T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0068",
+    "submission_id": "SUB-1177",
+    "volunteer_email": "james.johnson62@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0069",
+    "submission_id": "SUB-1307",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0070",
+    "submission_id": "SUB-1342",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-11T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0071",
+    "submission_id": "SUB-1232",
+    "volunteer_email": "sofia.khan77@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-21T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0072",
+    "submission_id": "SUB-1055",
+    "volunteer_email": "carlos.nguyen39@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0073",
+    "submission_id": "SUB-1334",
+    "volunteer_email": "sarah.patel64@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-03-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0074",
+    "submission_id": "SUB-1456",
+    "volunteer_email": "emily.brown76@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-02-16T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0075",
+    "submission_id": "SUB-1403",
+    "volunteer_email": "kwame.chen18@example.org",
+    "outcome": "accepted",
+    "opened": "2025-02-12T00:00:00",
+    "closed": "2025-03-02T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0076",
+    "submission_id": "SUB-1408",
+    "volunteer_email": "daniel.khan33@example.org",
+    "outcome": "accepted",
+    "opened": "2025-09-14T00:00:00",
+    "closed": "2025-10-09T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0077",
+    "submission_id": "SUB-1138",
+    "volunteer_email": "daniel.lopez61@example.org",
+    "outcome": "accepted",
+    "opened": "2025-09-07T00:00:00",
+    "closed": "2025-09-25T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0078",
+    "submission_id": "SUB-1536",
+    "volunteer_email": "priya.nguyen31@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-05-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0079",
+    "submission_id": "SUB-1589",
+    "volunteer_email": "lucas.khan11@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-07-31T00:00:00",
+    "closed": "2025-08-07T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0080",
+    "submission_id": "SUB-1328",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0081",
+    "submission_id": "SUB-1358",
+    "volunteer_email": "john.lopez78@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-15T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0082",
+    "submission_id": "SUB-1045",
+    "volunteer_email": "maria.johnson29@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-11T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0083",
+    "submission_id": "SUB-1115",
+    "volunteer_email": "sarah.ali6@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0084",
+    "submission_id": "SUB-1014",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-02-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0085",
+    "submission_id": "SUB-1023",
+    "volunteer_email": "daniel.khan42@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0086",
+    "submission_id": "SUB-1561",
+    "volunteer_email": "daniel.lopez61@example.org",
+    "outcome": "declined",
+    "opened": "2025-03-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0087",
+    "submission_id": "SUB-1385",
+    "volunteer_email": "omar.patel74@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0088",
+    "submission_id": "SUB-1061",
+    "volunteer_email": "omar.ali36@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0089",
+    "submission_id": "SUB-1476",
+    "volunteer_email": "PRIYA.NGUYEN1@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-12-05T00:00:00",
+    "closed": "2026-01-02T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0090",
+    "submission_id": "SUB-1110",
+    "volunteer_email": "daniel.chen2@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0091",
+    "submission_id": "SUB-1520",
+    "volunteer_email": "omar.lopez12@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-06T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0092",
+    "submission_id": "SUB-1190",
+    "volunteer_email": "daniel.smith25@example.org",
+    "outcome": "accepted",
+    "opened": "2025-08-23T00:00:00",
+    "closed": "2025-08-25T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0093",
+    "submission_id": "SUB-1253",
+    "volunteer_email": "MARIA.ALI67@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-09-08T00:00:00",
+    "closed": "2025-09-09T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0094",
+    "submission_id": "SUB-1355",
+    "volunteer_email": "lucas.khan45@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-04T00:00:00",
+    "closed": "2025-06-30T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0095",
+    "submission_id": "SUB-1063",
+    "volunteer_email": "MARIA.NGUYEN32@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-01-16T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0096",
+    "submission_id": "SUB-1230",
+    "volunteer_email": "daniel.smith19@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-21T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0097",
+    "submission_id": "SUB-1391",
+    "volunteer_email": "mei.johnson66@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-10T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0098",
+    "submission_id": "SUB-1427",
+    "volunteer_email": "lena.johnson30@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-07T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0099",
+    "submission_id": "SUB-1459",
+    "volunteer_email": "sarah.chen69@example.org",
+    "outcome": "accepted",
+    "opened": "2025-12-01T00:00:00",
+    "closed": "2025-12-29T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0100",
+    "submission_id": "SUB-1141",
+    "volunteer_email": "carlos.nguyen39@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-09-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0101",
+    "submission_id": "SUB-1148",
+    "volunteer_email": "emily.ali72@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0102",
+    "submission_id": "SUB-1188",
+    "volunteer_email": "maria.johnson40@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-03-16T00:00:00",
+    "closed": "2025-04-14T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0103",
+    "submission_id": "SUB-1423",
+    "volunteer_email": "wei.garcia52@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2026-01-17T00:00:00",
+    "closed": "2026-01-22T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0104",
+    "submission_id": "SUB-1192",
+    "volunteer_email": "john.johnson13@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-14T00:00:00",
+    "closed": "2025-02-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0105",
+    "submission_id": "SUB-1580",
+    "volunteer_email": "john.lopez78@example.org",
+    "outcome": "accepted",
+    "opened": "2025-04-29T00:00:00",
+    "closed": "2025-05-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0106",
+    "submission_id": "SUB-1081",
+    "volunteer_email": "daniel.lopez61@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-11-06T00:00:00",
+    "closed": "2025-11-12T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0107",
+    "submission_id": "SUB-1396",
+    "volunteer_email": "james.johnson62@example.org",
+    "outcome": "declined",
+    "opened": "2025-03-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0108",
+    "submission_id": "SUB-1418",
+    "volunteer_email": "PRIYA.NGUYEN1@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-07-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0109",
+    "submission_id": "SUB-1209",
+    "volunteer_email": "grace.chen8@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0110",
+    "submission_id": "SUB-1332",
+    "volunteer_email": "mei.nguyen58@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-07T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0111",
+    "submission_id": "SUB-1389",
+    "volunteer_email": "maria.johnson40@example.org",
+    "outcome": "accepted",
+    "opened": "2026-01-16T00:00:00",
+    "closed": "2026-02-02T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0112",
+    "submission_id": "SUB-1111",
+    "volunteer_email": "emily.johnson57@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-22T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0113",
+    "submission_id": "SUB-1531",
+    "volunteer_email": "sarah.nguyen68@example.org",
+    "outcome": "DECLINED",
+    "opened": "2026-01-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0114",
+    "submission_id": "SUB-1528",
+    "volunteer_email": "sarah.ali6@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-14T00:00:00",
+    "closed": "2025-09-08T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0115",
+    "submission_id": "SUB-1292",
+    "volunteer_email": "carlos.smith59@example.org",
+    "outcome": "declined",
+    "opened": "2025-05-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0116",
+    "submission_id": "SUB-1529",
+    "volunteer_email": "kwame.chen18@example.org",
+    "outcome": "accepted",
+    "opened": "2025-11-27T00:00:00",
+    "closed": "2025-12-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0117",
+    "submission_id": "SUB-1599",
+    "volunteer_email": "sarah.chen69@example.org",
+    "outcome": "accepted",
+    "opened": "2025-07-31T00:00:00",
+    "closed": "2025-08-06T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0118",
+    "submission_id": "SUB-1464",
+    "volunteer_email": "david.ali75@example.org",
+    "outcome": "declined",
+    "opened": "2025-04-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0119",
+    "submission_id": "SUB-1256",
+    "volunteer_email": "LENA.KHAN41@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-12-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0120",
+    "submission_id": "SUB-1093",
+    "volunteer_email": "lucas.brown14@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-21T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0121",
+    "submission_id": "SUB-1523",
+    "volunteer_email": "john.lopez78@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0122",
+    "submission_id": "SUB-1174",
+    "volunteer_email": "daniel.khan42@example.org",
+    "outcome": "accepted",
+    "opened": "2025-12-04T00:00:00",
+    "closed": "2026-01-01T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0123",
+    "submission_id": "SUB-1148",
+    "volunteer_email": "aisha.patel22@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-01-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0124",
+    "submission_id": "SUB-1456",
+    "volunteer_email": "omar.ali36@example.org",
+    "outcome": "accepted",
+    "opened": "2025-03-02T00:00:00",
+    "closed": "2025-03-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0125",
+    "submission_id": "SUB-1259",
+    "volunteer_email": "PRIYA.NGUYEN1@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-09-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0126",
+    "submission_id": "SUB-1505",
+    "volunteer_email": "lena.johnson30@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0127",
+    "submission_id": "SUB-1452",
+    "volunteer_email": "carlos.ali10@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-04T00:00:00",
+    "closed": "2025-01-24T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0128",
+    "submission_id": "SUB-1570",
+    "volunteer_email": "emily.smith26@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-03-17T00:00:00",
+    "closed": "2025-03-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0129",
+    "submission_id": "SUB-1148",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0130",
+    "submission_id": "SUB-1050",
+    "volunteer_email": "john.johnson13@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-04-02T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0131",
+    "submission_id": "SUB-1586",
+    "volunteer_email": "sofia.patel71@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-22T00:00:00",
+    "closed": "2025-09-21T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0132",
+    "submission_id": "SUB-1036",
+    "volunteer_email": "lucas.khan11@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-15T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0133",
+    "submission_id": "SUB-1069",
+    "volunteer_email": "daniel.brown54@example.org",
+    "outcome": "declined",
+    "opened": "2025-02-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0134",
+    "submission_id": "SUB-1124",
+    "volunteer_email": "omar.patel35@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0135",
+    "submission_id": "SUB-1059",
+    "volunteer_email": "john.johnson13@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-19T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0136",
+    "submission_id": "SUB-1495",
+    "volunteer_email": "sofia.khan77@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0137",
+    "submission_id": "SUB-1265",
+    "volunteer_email": "MARIA.ALI67@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-11-16T00:00:00",
+    "closed": "2025-12-06T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0138",
+    "submission_id": "SUB-1576",
+    "volunteer_email": "sarah.brown63@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0139",
+    "submission_id": "SUB-1238",
+    "volunteer_email": "omar.chen37@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-01-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0140",
+    "submission_id": "SUB-1120",
+    "volunteer_email": "emily.smith26@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0141",
+    "submission_id": "SUB-1358",
+    "volunteer_email": "sofia.patel71@example.org",
+    "outcome": null,
+    "opened": "2025-04-19T00:00:00",
+    "closed": "2025-04-26T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0142",
+    "submission_id": "SUB-1288",
+    "volunteer_email": "MARIA.NGUYEN32@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-06-07T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0143",
+    "submission_id": "SUB-1006",
+    "volunteer_email": "lucas.brown14@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0144",
+    "submission_id": "SUB-1179",
+    "volunteer_email": "raj.lopez24@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0145",
+    "submission_id": "SUB-1485",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-09-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0146",
+    "submission_id": "SUB-1549",
+    "volunteer_email": "daniel.khan42@example.org",
+    "outcome": "accepted",
+    "opened": "2025-07-31T00:00:00",
+    "closed": "2025-08-27T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0147",
+    "submission_id": "SUB-1533",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "accepted",
+    "opened": "2025-12-14T00:00:00",
+    "closed": "2025-12-21T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0148",
+    "submission_id": "SUB-1591",
+    "volunteer_email": "daniel.khan42@example.org",
+    "outcome": "accepted",
+    "opened": "2025-07-01T00:00:00",
+    "closed": "2025-07-10T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0149",
+    "submission_id": "SUB-1031",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-11-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0150",
+    "submission_id": "SUB-1584",
+    "volunteer_email": "sofia.khan77@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-11-01T00:00:00",
+    "closed": "2025-11-24T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0151",
+    "submission_id": "SUB-1322",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "declined",
+    "opened": "2025-02-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0152",
+    "submission_id": "SUB-1380",
+    "volunteer_email": "emily.johnson57@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0153",
+    "submission_id": "SUB-1179",
+    "volunteer_email": "lucas.brown14@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0154",
+    "submission_id": "SUB-1454",
+    "volunteer_email": "sarah.patel64@example.org",
+    "outcome": "accepted",
+    "opened": "2025-09-05T00:00:00",
+    "closed": "2025-09-12T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0155",
+    "submission_id": "SUB-1348",
+    "volunteer_email": "daniel.lopez61@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-09-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0156",
+    "submission_id": "SUB-1146",
+    "volunteer_email": "omar.lopez12@example.org",
+    "outcome": "accepted",
+    "opened": "2025-09-22T00:00:00",
+    "closed": "2025-09-29T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0157",
+    "submission_id": "SUB-1037",
+    "volunteer_email": "mei.nguyen58@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-09-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0158",
+    "submission_id": "SUB-1045",
+    "volunteer_email": "emily.brown76@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0159",
+    "submission_id": "SUB-1105",
+    "volunteer_email": "mei.johnson66@example.org",
+    "outcome": "DECLINED",
+    "opened": "2026-01-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0160",
+    "submission_id": "SUB-1214",
+    "volunteer_email": "LENA.KHAN41@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-05-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0161",
+    "submission_id": "SUB-1451",
+    "volunteer_email": "james.chen15@example.org",
+    "outcome": "declined",
+    "opened": "2025-03-22T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0162",
+    "submission_id": "SUB-1573",
+    "volunteer_email": "EMILY.NGUYEN65@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-10-05T00:00:00",
+    "closed": "2025-10-14T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0163",
+    "submission_id": "SUB-1144",
+    "volunteer_email": "omar.ali36@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-03-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0164",
+    "submission_id": "SUB-1553",
+    "volunteer_email": "john.garcia56@example.org",
+    "outcome": "accepted",
+    "opened": "2025-01-15T00:00:00",
+    "closed": "2025-01-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0165",
+    "submission_id": "SUB-1392",
+    "volunteer_email": "sarah.ali6@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-07-20T00:00:00",
+    "closed": "2025-08-09T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0166",
+    "submission_id": "SUB-1364",
+    "volunteer_email": "carlos.nguyen39@example.org",
+    "outcome": "declined",
+    "opened": "2025-04-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0167",
+    "submission_id": "SUB-1476",
+    "volunteer_email": "emily.ali72@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-12-24T00:00:00",
+    "closed": "2026-01-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0168",
+    "submission_id": "SUB-1476",
+    "volunteer_email": "carlos.ali60@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-04-25T00:00:00",
+    "closed": "2025-05-25T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0169",
+    "submission_id": "SUB-1372",
+    "volunteer_email": "aisha.chen50@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-12-07T00:00:00",
+    "closed": "2025-12-22T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0170",
+    "submission_id": "SUB-1499",
+    "volunteer_email": "kwame.patel3@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-27T00:00:00",
+    "closed": "2025-03-27T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0171",
+    "submission_id": "SUB-1174",
+    "volunteer_email": "omar.ali36@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-06T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0172",
+    "submission_id": "SUB-1415",
+    "volunteer_email": "john.johnson13@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0173",
+    "submission_id": "SUB-1545",
+    "volunteer_email": "carlos.smith59@example.org",
+    "outcome": "accepted",
+    "opened": "2025-07-31T00:00:00",
+    "closed": "2025-08-18T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0174",
+    "submission_id": "SUB-1162",
+    "volunteer_email": "daniel.lopez61@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-24T00:00:00",
+    "closed": "2025-07-20T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0175",
+    "submission_id": "SUB-1445",
+    "volunteer_email": "emily.ali72@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-06T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0176",
+    "submission_id": "SUB-1079",
+    "volunteer_email": "maria.garcia73@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-02-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0177",
+    "submission_id": "SUB-1333",
+    "volunteer_email": "sofia.patel71@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-16T00:00:00",
+    "closed": "2025-08-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0178",
+    "submission_id": "SUB-1111",
+    "volunteer_email": "emily.brown76@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0179",
+    "submission_id": "SUB-1092",
+    "volunteer_email": "KWAME.PATEL27@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-10-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0180",
+    "submission_id": "SUB-1150",
+    "volunteer_email": "daniel.smith19@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-05-30T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0181",
+    "submission_id": "SUB-1200",
+    "volunteer_email": "emily.smith26@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0182",
+    "submission_id": "SUB-1445",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": null,
+    "opened": "2025-10-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0183",
+    "submission_id": "SUB-1522",
+    "volunteer_email": "priya.johnson51@example.org",
+    "outcome": "declined",
+    "opened": "2025-05-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0184",
+    "submission_id": "SUB-1000",
+    "volunteer_email": "sofia.patel71@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-07-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0185",
+    "submission_id": "SUB-1031",
+    "volunteer_email": "lena.johnson30@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-30T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0186",
+    "submission_id": "SUB-1391",
+    "volunteer_email": "priya.johnson51@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-07T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0187",
+    "submission_id": "SUB-1486",
+    "volunteer_email": "raj.brown17@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-07-16T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0188",
+    "submission_id": "SUB-1427",
+    "volunteer_email": "daniel.smith19@example.org",
+    "outcome": "accepted",
+    "opened": "2025-12-10T00:00:00",
+    "closed": "2025-12-13T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0189",
+    "submission_id": "SUB-1016",
+    "volunteer_email": "kwame.chen18@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-07T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0190",
+    "submission_id": "SUB-1086",
+    "volunteer_email": "raj.brown17@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0191",
+    "submission_id": "SUB-1184",
+    "volunteer_email": "mei.nguyen58@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-10-10T00:00:00",
+    "closed": "2025-10-22T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0192",
+    "submission_id": "SUB-1231",
+    "volunteer_email": "daniel.ali23@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0193",
+    "submission_id": "SUB-1513",
+    "volunteer_email": "JAMES.NGUYEN34@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-10-07T00:00:00",
+    "closed": "2025-10-09T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0194",
+    "submission_id": "SUB-1581",
+    "volunteer_email": "daniel.lopez61@example.org",
+    "outcome": "declined",
+    "opened": "2025-02-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0195",
+    "submission_id": "SUB-1145",
+    "volunteer_email": "MARIA.ALI67@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2026-01-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0196",
+    "submission_id": "SUB-1529",
+    "volunteer_email": "carlos.ali10@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-09T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0197",
+    "submission_id": "SUB-1079",
+    "volunteer_email": "sarah.chen69@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-09T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0198",
+    "submission_id": "SUB-1547",
+    "volunteer_email": "PRIYA.NGUYEN1@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-09-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0199",
+    "submission_id": "SUB-1431",
+    "volunteer_email": "lucas.khan45@example.org",
+    "outcome": "declined",
+    "opened": "2025-05-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0200",
+    "submission_id": "SUB-1311",
+    "volunteer_email": "emily.ali72@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-19T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0201",
+    "submission_id": "SUB-1586",
+    "volunteer_email": "sarah.ali6@example.org",
+    "outcome": "declined",
+    "opened": "2025-05-30T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0202",
+    "submission_id": "SUB-1293",
+    "volunteer_email": "james.johnson62@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-09-16T00:00:00",
+    "closed": "2025-09-25T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0203",
+    "submission_id": "SUB-1135",
+    "volunteer_email": "john.lopez78@example.org",
+    "outcome": null,
+    "opened": "2025-05-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0204",
+    "submission_id": "SUB-1114",
+    "volunteer_email": "sofia.khan77@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-10-30T00:00:00",
+    "closed": "2025-11-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0205",
+    "submission_id": "SUB-1179",
+    "volunteer_email": "daniel.khan33@example.org",
+    "outcome": "accepted",
+    "opened": "2025-05-01T00:00:00",
+    "closed": "2025-05-12T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0206",
+    "submission_id": "SUB-1086",
+    "volunteer_email": "kwame.chen18@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-03-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0207",
+    "submission_id": "SUB-1392",
+    "volunteer_email": "lena.johnson30@example.org",
+    "outcome": "declined",
+    "opened": "2026-01-07T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0208",
+    "submission_id": "SUB-1591",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "accepted",
+    "opened": "2025-05-16T00:00:00",
+    "closed": "2025-05-18T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0209",
+    "submission_id": "SUB-1171",
+    "volunteer_email": "carlos.smith59@example.org",
+    "outcome": "accepted",
+    "opened": "2025-06-04T00:00:00",
+    "closed": "2025-06-17T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0210",
+    "submission_id": "SUB-1399",
+    "volunteer_email": "carlos.ali60@example.org",
+    "outcome": "accepted",
+    "opened": "2025-09-29T00:00:00",
+    "closed": "2025-10-09T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0211",
+    "submission_id": "SUB-1459",
+    "volunteer_email": "wei.ali48@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0212",
+    "submission_id": "SUB-1099",
+    "volunteer_email": "sarah.nguyen68@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-10T00:00:00",
+    "closed": "2025-08-21T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0213",
+    "submission_id": "SUB-1276",
+    "volunteer_email": "JAMES.NGUYEN34@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-05-11T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0214",
+    "submission_id": "SUB-1472",
+    "volunteer_email": "lena.johnson30@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0215",
+    "submission_id": "SUB-1184",
+    "volunteer_email": "maria.johnson40@example.org",
+    "outcome": null,
+    "opened": "2025-12-11T00:00:00",
+    "closed": "2025-12-14T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0216",
+    "submission_id": "SUB-1012",
+    "volunteer_email": "wei.garcia52@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-23T00:00:00",
+    "closed": "2025-03-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0217",
+    "submission_id": "SUB-1290",
+    "volunteer_email": "MARIA.NGUYEN32@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-01-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0218",
+    "submission_id": "SUB-1222",
+    "volunteer_email": "emily.brown76@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0219",
+    "submission_id": "SUB-1133",
+    "volunteer_email": "wei.ali48@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0220",
+    "submission_id": "SUB-1113",
+    "volunteer_email": "daniel.ali23@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0221",
+    "submission_id": "SUB-1464",
+    "volunteer_email": "omar.patel35@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-21T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0222",
+    "submission_id": "SUB-1263",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-05-22T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0223",
+    "submission_id": "SUB-1397",
+    "volunteer_email": "daniel.khan42@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-05-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0224",
+    "submission_id": "SUB-1182",
+    "volunteer_email": "john.garcia56@example.org",
+    "outcome": "accepted",
+    "opened": "2025-04-13T00:00:00",
+    "closed": "2025-05-04T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0225",
+    "submission_id": "SUB-1503",
+    "volunteer_email": "john.johnson13@example.org",
+    "outcome": "accepted",
+    "opened": "2026-01-29T00:00:00",
+    "closed": "2026-02-28T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0226",
+    "submission_id": "SUB-1452",
+    "volunteer_email": "daniel.khan33@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-07T00:00:00",
+    "closed": "2025-03-04T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0227",
+    "submission_id": "SUB-1456",
+    "volunteer_email": "daniel.chen2@example.org",
+    "outcome": "accepted",
+    "opened": "2025-03-18T00:00:00",
+    "closed": "2025-04-17T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0228",
+    "submission_id": "SUB-1038",
+    "volunteer_email": "PRIYA.KHAN49@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-12-25T00:00:00",
+    "closed": "2026-01-13T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0229",
+    "submission_id": "SUB-1003",
+    "volunteer_email": "EMILY.NGUYEN65@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2026-01-30T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0230",
+    "submission_id": "SUB-1413",
+    "volunteer_email": "grace.chen8@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-01-02T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0231",
+    "submission_id": "SUB-1124",
+    "volunteer_email": "emily.ali72@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-07-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0232",
+    "submission_id": "SUB-1410",
+    "volunteer_email": "MEI.NGUYEN7@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-11-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0233",
+    "submission_id": "SUB-1082",
+    "volunteer_email": "mei.nguyen58@example.org",
+    "outcome": "declined",
+    "opened": "2025-05-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0234",
+    "submission_id": "SUB-1567",
+    "volunteer_email": "omar.patel5@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0235",
+    "submission_id": "SUB-1109",
+    "volunteer_email": "lucas.khan45@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0236",
+    "submission_id": "SUB-1143",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "accepted",
+    "opened": "2026-01-04T00:00:00",
+    "closed": "2026-01-20T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0237",
+    "submission_id": "SUB-1398",
+    "volunteer_email": "grace.chen8@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0238",
+    "submission_id": "SUB-1016",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "accepted",
+    "opened": "2025-06-22T00:00:00",
+    "closed": "2025-07-05T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0239",
+    "submission_id": "SUB-1121",
+    "volunteer_email": "KWAME.PATEL27@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-12-08T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0240",
+    "submission_id": "SUB-1593",
+    "volunteer_email": "maria.johnson29@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-01-19T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0241",
+    "submission_id": "SUB-1019",
+    "volunteer_email": "carlos.ali60@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0242",
+    "submission_id": "SUB-1014",
+    "volunteer_email": "aisha.patel22@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-07T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0243",
+    "submission_id": "SUB-1467",
+    "volunteer_email": "john.lopez78@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-30T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0244",
+    "submission_id": "SUB-1116",
+    "volunteer_email": "sarah.brown63@example.org",
+    "outcome": "accepted",
+    "opened": "2025-11-12T00:00:00",
+    "closed": "2025-11-26T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0245",
+    "submission_id": "SUB-1345",
+    "volunteer_email": "priya.johnson51@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0246",
+    "submission_id": "SUB-1329",
+    "volunteer_email": "KWAME.PATEL27@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-10-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0247",
+    "submission_id": "SUB-1123",
+    "volunteer_email": "omar.patel35@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-01T00:00:00",
+    "closed": "2025-08-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0248",
+    "submission_id": "SUB-1168",
+    "volunteer_email": "john.garcia56@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0249",
+    "submission_id": "SUB-1385",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "accepted",
+    "opened": "2025-09-07T00:00:00",
+    "closed": "2025-09-13T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0250",
+    "submission_id": "SUB-1091",
+    "volunteer_email": "david.ali75@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-02T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0251",
+    "submission_id": "SUB-1129",
+    "volunteer_email": "emily.smith26@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-05-19T00:00:00",
+    "closed": "2025-05-27T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0252",
+    "submission_id": "SUB-1178",
+    "volunteer_email": "john.lopez78@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-02T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0253",
+    "submission_id": "SUB-1090",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "accepted",
+    "opened": "2025-01-03T00:00:00",
+    "closed": "2025-01-07T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0254",
+    "submission_id": "SUB-1542",
+    "volunteer_email": "omar.lopez12@example.org",
+    "outcome": "accepted",
+    "opened": "2026-01-25T00:00:00",
+    "closed": "2026-02-09T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0255",
+    "submission_id": "SUB-1213",
+    "volunteer_email": "omar.patel35@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-27T00:00:00",
+    "closed": "2025-03-15T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0256",
+    "submission_id": "SUB-1180",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-01-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0257",
+    "submission_id": "SUB-1291",
+    "volunteer_email": "emily.smith26@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-21T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0258",
+    "submission_id": "SUB-1044",
+    "volunteer_email": "john.johnson13@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0259",
+    "submission_id": "SUB-1496",
+    "volunteer_email": "EMILY.NGUYEN65@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-05-01T00:00:00",
+    "closed": "2025-05-15T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0260",
+    "submission_id": "SUB-1203",
+    "volunteer_email": "LENA.KHAN41@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-02-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0261",
+    "submission_id": "SUB-1242",
+    "volunteer_email": "wei.garcia52@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0262",
+    "submission_id": "SUB-1482",
+    "volunteer_email": "omar.patel74@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0263",
+    "submission_id": "SUB-1182",
+    "volunteer_email": "PRIYA.KHAN49@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-23T00:00:00",
+    "closed": "2025-09-01T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0264",
+    "submission_id": "SUB-1207",
+    "volunteer_email": "daniel.khan42@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-12-21T00:00:00",
+    "closed": "2025-12-26T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0265",
+    "submission_id": "SUB-1113",
+    "volunteer_email": "carlos.smith59@example.org",
+    "outcome": "accepted",
+    "opened": "2025-03-29T00:00:00",
+    "closed": "2025-04-27T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0266",
+    "submission_id": "SUB-1302",
+    "volunteer_email": "sofia.khan77@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0267",
+    "submission_id": "SUB-1591",
+    "volunteer_email": "fatima.johnson70@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-02-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0268",
+    "submission_id": "SUB-1221",
+    "volunteer_email": "david.ali75@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0269",
+    "submission_id": "SUB-1252",
+    "volunteer_email": "priya.nguyen31@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0270",
+    "submission_id": "SUB-1587",
+    "volunteer_email": "grace.smith0@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-23T00:00:00",
+    "closed": "2025-02-16T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0271",
+    "submission_id": "SUB-1516",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-21T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0272",
+    "submission_id": "SUB-1463",
+    "volunteer_email": "sarah.brown63@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-10-13T00:00:00",
+    "closed": "2025-10-20T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0273",
+    "submission_id": "SUB-1135",
+    "volunteer_email": "lucas.khan45@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0274",
+    "submission_id": "SUB-1491",
+    "volunteer_email": "carlos.nguyen39@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0275",
+    "submission_id": "SUB-1465",
+    "volunteer_email": "carlos.smith59@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0276",
+    "submission_id": "SUB-1475",
+    "volunteer_email": "grace.smith0@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-02-06T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0277",
+    "submission_id": "SUB-1543",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "declined",
+    "opened": "2026-01-21T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0278",
+    "submission_id": "SUB-1082",
+    "volunteer_email": "david.patel79@example.org",
+    "outcome": "DECLINED",
+    "opened": "2026-01-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0279",
+    "submission_id": "SUB-1052",
+    "volunteer_email": "lucas.brown14@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0280",
+    "submission_id": "SUB-1375",
+    "volunteer_email": "aisha.patel22@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0281",
+    "submission_id": "SUB-1141",
+    "volunteer_email": "daniel.khan42@example.org",
+    "outcome": "accepted",
+    "opened": "2025-02-28T00:00:00",
+    "closed": "2025-03-25T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0282",
+    "submission_id": "SUB-1230",
+    "volunteer_email": "LENA.KHAN41@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-05-17T00:00:00",
+    "closed": "2025-05-26T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0283",
+    "submission_id": "SUB-1055",
+    "volunteer_email": "grace.chen8@example.org",
+    "outcome": "accepted",
+    "opened": "2025-08-20T00:00:00",
+    "closed": "2025-09-05T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0284",
+    "submission_id": "SUB-1544",
+    "volunteer_email": "sarah.nguyen68@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0285",
+    "submission_id": "SUB-1192",
+    "volunteer_email": "mei.nguyen58@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-07-20T00:00:00",
+    "closed": "2025-07-23T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0286",
+    "submission_id": "SUB-1111",
+    "volunteer_email": "omar.nguyen21@example.org",
+    "outcome": "accepted",
+    "opened": "2025-12-23T00:00:00",
+    "closed": "2026-01-20T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0287",
+    "submission_id": "SUB-1209",
+    "volunteer_email": "mei.johnson66@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0288",
+    "submission_id": "SUB-1485",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "DECLINED",
+    "opened": "2026-01-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0289",
+    "submission_id": "SUB-1193",
+    "volunteer_email": "grace.chen8@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-04-29T00:00:00",
+    "closed": "2025-05-13T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0290",
+    "submission_id": "SUB-1592",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-06-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0291",
+    "submission_id": "SUB-1468",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-06T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0292",
+    "submission_id": "SUB-1232",
+    "volunteer_email": "daniel.lopez61@example.org",
+    "outcome": "declined",
+    "opened": "2025-05-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0293",
+    "submission_id": "SUB-1151",
+    "volunteer_email": "lucas.khan45@example.org",
+    "outcome": "accepted",
+    "opened": "2025-03-27T00:00:00",
+    "closed": "2025-04-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0294",
+    "submission_id": "SUB-1548",
+    "volunteer_email": "omar.ali36@example.org",
+    "outcome": "declined",
+    "opened": "2025-03-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0295",
+    "submission_id": "SUB-1165",
+    "volunteer_email": "lena.johnson30@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-12T00:00:00",
+    "closed": "2025-06-21T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0296",
+    "submission_id": "SUB-1378",
+    "volunteer_email": "daniel.ali23@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0297",
+    "submission_id": "SUB-1352",
+    "volunteer_email": "kwame.chen18@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0298",
+    "submission_id": "SUB-1124",
+    "volunteer_email": "kwame.patel3@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-09-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0299",
+    "submission_id": "SUB-1327",
+    "volunteer_email": "daniel.smith19@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2026-01-14T00:00:00",
+    "closed": "2026-02-04T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0300",
+    "submission_id": "SUB-1302",
+    "volunteer_email": "carlos.ali60@example.org",
+    "outcome": "declined",
+    "opened": "2026-01-22T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0301",
+    "submission_id": "SUB-1578",
+    "volunteer_email": "john.garcia56@example.org",
+    "outcome": "accepted",
+    "opened": "2025-02-27T00:00:00",
+    "closed": "2025-03-04T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0302",
+    "submission_id": "SUB-1564",
+    "volunteer_email": "lucas.brown14@example.org",
+    "outcome": "accepted",
+    "opened": "2025-07-25T00:00:00",
+    "closed": "2025-08-09T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0303",
+    "submission_id": "SUB-1365",
+    "volunteer_email": "lucas.khan11@example.org",
+    "outcome": "accepted",
+    "opened": "2025-11-08T00:00:00",
+    "closed": "2025-12-04T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0304",
+    "submission_id": "SUB-1284",
+    "volunteer_email": "daniel.smith25@example.org",
+    "outcome": "accepted",
+    "opened": "2025-10-03T00:00:00",
+    "closed": "2025-10-20T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0305",
+    "submission_id": "SUB-1403",
+    "volunteer_email": "raj.lopez24@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0306",
+    "submission_id": "SUB-1369",
+    "volunteer_email": "aisha.chen50@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-07T00:00:00",
+    "closed": "2025-08-08T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0307",
+    "submission_id": "SUB-1291",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "accepted",
+    "opened": "2025-08-17T00:00:00",
+    "closed": "2025-08-24T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0308",
+    "submission_id": "SUB-1454",
+    "volunteer_email": "SOFIA.JOHNSON53@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-05-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0309",
+    "submission_id": "SUB-1424",
+    "volunteer_email": "raj.brown17@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0310",
+    "submission_id": "SUB-1310",
+    "volunteer_email": "carlos.ali60@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0311",
+    "submission_id": "SUB-1384",
+    "volunteer_email": "lucas.khan11@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-11-24T00:00:00",
+    "closed": "2025-11-30T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0312",
+    "submission_id": "SUB-1569",
+    "volunteer_email": "carlos.smith59@example.org",
+    "outcome": "declined",
+    "opened": "2026-01-22T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0313",
+    "submission_id": "SUB-1190",
+    "volunteer_email": "wei.ali48@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-09-09T00:00:00",
+    "closed": "2025-10-06T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0314",
+    "submission_id": "SUB-1599",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "accepted",
+    "opened": "2026-01-14T00:00:00",
+    "closed": "2026-02-09T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0315",
+    "submission_id": "SUB-1002",
+    "volunteer_email": "daniel.smith19@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-11-24T00:00:00",
+    "closed": "2025-11-28T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0316",
+    "submission_id": "SUB-1294",
+    "volunteer_email": "SOFIA.JOHNSON53@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-12-19T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0317",
+    "submission_id": "SUB-1122",
+    "volunteer_email": "omar.patel35@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-02-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0318",
+    "submission_id": "SUB-1595",
+    "volunteer_email": "daniel.lopez61@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-05-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0319",
+    "submission_id": "SUB-1122",
+    "volunteer_email": "david.chen47@example.org",
+    "outcome": null,
+    "opened": "2025-10-22T00:00:00",
+    "closed": "2025-10-31T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0320",
+    "submission_id": "SUB-1166",
+    "volunteer_email": "omar.patel74@example.org",
+    "outcome": "accepted",
+    "opened": "2025-06-13T00:00:00",
+    "closed": "2025-06-25T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0321",
+    "submission_id": "SUB-1167",
+    "volunteer_email": "sarah.ali6@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-03T00:00:00",
+    "closed": "2025-08-05T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0322",
+    "submission_id": "SUB-1296",
+    "volunteer_email": "omar.chen37@example.org",
+    "outcome": "declined",
+    "opened": "2025-02-09T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0323",
+    "submission_id": "SUB-1096",
+    "volunteer_email": "emily.brown76@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-06T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0324",
+    "submission_id": "SUB-1308",
+    "volunteer_email": "JAMES.NGUYEN34@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-12-19T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0325",
+    "submission_id": "SUB-1147",
+    "volunteer_email": "PRIYA.NGUYEN1@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-05-25T00:00:00",
+    "closed": "2025-06-08T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0326",
+    "submission_id": "SUB-1348",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "accepted",
+    "opened": "2025-03-21T00:00:00",
+    "closed": "2025-04-16T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0327",
+    "submission_id": "SUB-1572",
+    "volunteer_email": "john.lopez78@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0328",
+    "submission_id": "SUB-1427",
+    "volunteer_email": "mei.nguyen58@example.org",
+    "outcome": "declined",
+    "opened": "2025-03-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0329",
+    "submission_id": "SUB-1491",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-07-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0330",
+    "submission_id": "SUB-1535",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": null,
+    "opened": "2025-06-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0331",
+    "submission_id": "SUB-1121",
+    "volunteer_email": "fatima.lopez28@example.org",
+    "outcome": "accepted",
+    "opened": "2025-12-22T00:00:00",
+    "closed": "2026-01-01T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0332",
+    "submission_id": "SUB-1128",
+    "volunteer_email": "emily.smith26@example.org",
+    "outcome": "accepted",
+    "opened": "2025-02-10T00:00:00",
+    "closed": "2025-02-13T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0333",
+    "submission_id": "SUB-1019",
+    "volunteer_email": "daniel.lopez61@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-22T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0334",
+    "submission_id": "SUB-1525",
+    "volunteer_email": "david.ali75@example.org",
+    "outcome": "accepted",
+    "opened": "2025-03-02T00:00:00",
+    "closed": "2025-03-05T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0335",
+    "submission_id": "SUB-1308",
+    "volunteer_email": "PRIYA.NGUYEN1@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2026-02-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0336",
+    "submission_id": "SUB-1204",
+    "volunteer_email": "daniel.ali23@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-01-15T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0337",
+    "submission_id": "SUB-1593",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "accepted",
+    "opened": "2025-09-14T00:00:00",
+    "closed": "2025-10-01T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0338",
+    "submission_id": "SUB-1583",
+    "volunteer_email": "grace.chen8@example.org",
+    "outcome": "accepted",
+    "opened": "2025-10-24T00:00:00",
+    "closed": "2025-11-16T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0339",
+    "submission_id": "SUB-1196",
+    "volunteer_email": "omar.ali36@example.org",
+    "outcome": "accepted",
+    "opened": "2026-01-22T00:00:00",
+    "closed": "2026-02-21T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0340",
+    "submission_id": "SUB-1219",
+    "volunteer_email": "sarah.patel64@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0341",
+    "submission_id": "SUB-1450",
+    "volunteer_email": "john.johnson13@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-07-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0342",
+    "submission_id": "SUB-1219",
+    "volunteer_email": "EMILY.NGUYEN65@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-02-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0343",
+    "submission_id": "SUB-1126",
+    "volunteer_email": "carlos.smith59@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-03-11T00:00:00",
+    "closed": "2025-04-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0344",
+    "submission_id": "SUB-1295",
+    "volunteer_email": "sofia.patel71@example.org",
+    "outcome": "declined",
+    "opened": "2025-02-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0345",
+    "submission_id": "SUB-1394",
+    "volunteer_email": "omar.ali36@example.org",
+    "outcome": "DECLINED",
+    "opened": "2026-01-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0346",
+    "submission_id": "SUB-1231",
+    "volunteer_email": "fatima.johnson70@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-08T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0347",
+    "submission_id": "SUB-1487",
+    "volunteer_email": "david.chen47@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0348",
+    "submission_id": "SUB-1405",
+    "volunteer_email": "john.garcia56@example.org",
+    "outcome": "accepted",
+    "opened": "2025-12-13T00:00:00",
+    "closed": "2025-12-26T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0349",
+    "submission_id": "SUB-1410",
+    "volunteer_email": "david.ali75@example.org",
+    "outcome": "declined",
+    "opened": "2026-01-15T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0350",
+    "submission_id": "SUB-1066",
+    "volunteer_email": "SARAH.PATEL46@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-06-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0351",
+    "submission_id": "SUB-1125",
+    "volunteer_email": "maria.johnson29@example.org",
+    "outcome": "DECLINED",
+    "opened": "2026-01-07T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0352",
+    "submission_id": "SUB-1409",
+    "volunteer_email": "lucas.khan45@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0353",
+    "submission_id": "SUB-1523",
+    "volunteer_email": "omar.patel35@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-21T00:00:00",
+    "closed": "2025-09-06T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0354",
+    "submission_id": "SUB-1509",
+    "volunteer_email": "maria.johnson29@example.org",
+    "outcome": null,
+    "opened": "2025-03-10T00:00:00",
+    "closed": "2025-04-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0355",
+    "submission_id": "SUB-1054",
+    "volunteer_email": "grace.chen8@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-14T00:00:00",
+    "closed": "2025-02-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0356",
+    "submission_id": "SUB-1334",
+    "volunteer_email": "daniel.smith19@example.org",
+    "outcome": "accepted",
+    "opened": "2025-11-16T00:00:00",
+    "closed": "2025-12-08T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0357",
+    "submission_id": "SUB-1532",
+    "volunteer_email": "sarah.brown63@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-04-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0358",
+    "submission_id": "SUB-1502",
+    "volunteer_email": "sarah.patel64@example.org",
+    "outcome": "accepted",
+    "opened": "2025-06-25T00:00:00",
+    "closed": "2025-07-20T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0359",
+    "submission_id": "SUB-1032",
+    "volunteer_email": "emily.khan55@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-03-02T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0360",
+    "submission_id": "SUB-1385",
+    "volunteer_email": "john.garcia56@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-01-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0361",
+    "submission_id": "SUB-1168",
+    "volunteer_email": "james.johnson62@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-09T00:00:00",
+    "closed": "2025-07-04T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0362",
+    "submission_id": "SUB-1112",
+    "volunteer_email": "emily.ali72@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0363",
+    "submission_id": "SUB-1487",
+    "volunteer_email": "sofia.patel71@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-09-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0364",
+    "submission_id": "SUB-1506",
+    "volunteer_email": "david.ali75@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0365",
+    "submission_id": "SUB-1328",
+    "volunteer_email": "MEI.NGUYEN7@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-24T00:00:00",
+    "closed": "2025-02-05T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0366",
+    "submission_id": "SUB-1597",
+    "volunteer_email": "kwame.patel3@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0367",
+    "submission_id": "SUB-1438",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-30T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0368",
+    "submission_id": "SUB-1253",
+    "volunteer_email": "lena.johnson30@example.org",
+    "outcome": "accepted",
+    "opened": "2025-10-31T00:00:00",
+    "closed": "2025-11-28T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0369",
+    "submission_id": "SUB-1312",
+    "volunteer_email": "lucas.brown14@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-11T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0370",
+    "submission_id": "SUB-1471",
+    "volunteer_email": "daniel.brown54@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0371",
+    "submission_id": "SUB-1022",
+    "volunteer_email": "maria.johnson40@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-19T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0372",
+    "submission_id": "SUB-1500",
+    "volunteer_email": "omar.lopez12@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-04-16T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0373",
+    "submission_id": "SUB-1170",
+    "volunteer_email": "john.lopez78@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0374",
+    "submission_id": "SUB-1548",
+    "volunteer_email": "KWAME.PATEL27@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-01-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0375",
+    "submission_id": "SUB-1231",
+    "volunteer_email": "david.patel79@example.org",
+    "outcome": "declined",
+    "opened": "2025-02-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0376",
+    "submission_id": "SUB-1344",
+    "volunteer_email": "JAMES.NGUYEN34@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-09-29T00:00:00",
+    "closed": "2025-10-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0377",
+    "submission_id": "SUB-1078",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0378",
+    "submission_id": "SUB-1204",
+    "volunteer_email": "SOFIA.JOHNSON53@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-11-16T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0379",
+    "submission_id": "SUB-1019",
+    "volunteer_email": "mei.johnson66@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0380",
+    "submission_id": "SUB-1274",
+    "volunteer_email": "sarah.nguyen68@example.org",
+    "outcome": "declined",
+    "opened": "2026-01-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0381",
+    "submission_id": "SUB-1534",
+    "volunteer_email": "daniel.smith25@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-03-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0382",
+    "submission_id": "SUB-1445",
+    "volunteer_email": "wei.garcia52@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-02T00:00:00",
+    "closed": "2025-02-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0383",
+    "submission_id": "SUB-1293",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0384",
+    "submission_id": "SUB-1116",
+    "volunteer_email": "daniel.smith19@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-05-06T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0385",
+    "submission_id": "SUB-1475",
+    "volunteer_email": "james.johnson62@example.org",
+    "outcome": "accepted",
+    "opened": "2025-08-12T00:00:00",
+    "closed": "2025-08-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0386",
+    "submission_id": "SUB-1163",
+    "volunteer_email": "JAMES.NGUYEN34@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-05-13T00:00:00",
+    "closed": "2025-06-04T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0387",
+    "submission_id": "SUB-1563",
+    "volunteer_email": "aisha.patel22@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-01-22T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0388",
+    "submission_id": "SUB-1020",
+    "volunteer_email": "MEI.NGUYEN7@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-02-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0389",
+    "submission_id": "SUB-1065",
+    "volunteer_email": "wei.garcia52@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-10T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0390",
+    "submission_id": "SUB-1406",
+    "volunteer_email": "raj.brown17@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0391",
+    "submission_id": "SUB-1534",
+    "volunteer_email": "omar.patel74@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0392",
+    "submission_id": "SUB-1243",
+    "volunteer_email": "emily.brown76@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-10T00:00:00",
+    "closed": "2025-07-06T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0393",
+    "submission_id": "SUB-1241",
+    "volunteer_email": "daniel.brown54@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-02-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0394",
+    "submission_id": "SUB-1450",
+    "volunteer_email": "wei.garcia52@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-10-29T00:00:00",
+    "closed": "2025-11-21T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0395",
+    "submission_id": "SUB-1115",
+    "volunteer_email": "maria.johnson40@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-09-01T00:00:00",
+    "closed": "2025-09-30T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0396",
+    "submission_id": "SUB-1148",
+    "volunteer_email": "SARAH.PATEL46@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-07-08T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0397",
+    "submission_id": "SUB-1035",
+    "volunteer_email": "sarah.ali6@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-10T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0398",
+    "submission_id": "SUB-1316",
+    "volunteer_email": "SARAH.PATEL46@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-12-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0399",
+    "submission_id": "SUB-1453",
+    "volunteer_email": "PRIYA.KHAN49@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-07-21T00:00:00",
+    "closed": "2025-07-31T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0400",
+    "submission_id": "SUB-1092",
+    "volunteer_email": "lena.johnson30@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-03-24T00:00:00",
+    "closed": "2025-04-22T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0401",
+    "submission_id": "SUB-1416",
+    "volunteer_email": "mei.nguyen4@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-11T00:00:00",
+    "closed": "2025-02-27T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0402",
+    "submission_id": "SUB-1422",
+    "volunteer_email": "daniel.khan42@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-02-21T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0403",
+    "submission_id": "SUB-1518",
+    "volunteer_email": "grace.chen8@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0404",
+    "submission_id": "SUB-1464",
+    "volunteer_email": "kwame.patel3@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0405",
+    "submission_id": "SUB-1139",
+    "volunteer_email": "grace.smith0@example.org",
+    "outcome": "accepted",
+    "opened": "2025-11-18T00:00:00",
+    "closed": "2025-11-22T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0406",
+    "submission_id": "SUB-1161",
+    "volunteer_email": "priya.nguyen31@example.org",
+    "outcome": "accepted",
+    "opened": "2026-01-29T00:00:00",
+    "closed": "2026-02-26T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0407",
+    "submission_id": "SUB-1420",
+    "volunteer_email": "maria.johnson40@example.org",
+    "outcome": "accepted",
+    "opened": "2026-01-12T00:00:00",
+    "closed": "2026-02-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0408",
+    "submission_id": "SUB-1335",
+    "volunteer_email": "omar.ali36@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-01T00:00:00",
+    "closed": "2025-08-30T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0409",
+    "submission_id": "SUB-1386",
+    "volunteer_email": "maria.garcia73@example.org",
+    "outcome": "accepted",
+    "opened": "2025-01-12T00:00:00",
+    "closed": "2025-02-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0410",
+    "submission_id": "SUB-1091",
+    "volunteer_email": "carlos.smith59@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0411",
+    "submission_id": "SUB-1410",
+    "volunteer_email": "david.patel79@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-05-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0412",
+    "submission_id": "SUB-1174",
+    "volunteer_email": "emily.ali72@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2026-01-03T00:00:00",
+    "closed": "2026-01-30T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0413",
+    "submission_id": "SUB-1506",
+    "volunteer_email": "james.chen15@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-04-15T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0414",
+    "submission_id": "SUB-1294",
+    "volunteer_email": "sarah.brown63@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-09T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0415",
+    "submission_id": "SUB-1289",
+    "volunteer_email": "raj.lopez24@example.org",
+    "outcome": "accepted",
+    "opened": "2025-07-29T00:00:00",
+    "closed": "2025-08-08T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0416",
+    "submission_id": "SUB-1268",
+    "volunteer_email": "lena.johnson30@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-05-08T00:00:00",
+    "closed": "2025-05-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0417",
+    "submission_id": "SUB-1010",
+    "volunteer_email": "carlos.ali60@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-15T00:00:00",
+    "closed": "2025-07-07T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0418",
+    "submission_id": "SUB-1217",
+    "volunteer_email": "PRIYA.KHAN49@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2026-01-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0419",
+    "submission_id": "SUB-1097",
+    "volunteer_email": "sofia.patel71@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-20T00:00:00",
+    "closed": "2025-07-20T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0420",
+    "submission_id": "SUB-1362",
+    "volunteer_email": "sofia.khan77@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0421",
+    "submission_id": "SUB-1005",
+    "volunteer_email": "MARIA.NGUYEN32@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-07-15T00:00:00",
+    "closed": "2025-08-06T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0422",
+    "submission_id": "SUB-1379",
+    "volunteer_email": "james.patel16@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0423",
+    "submission_id": "SUB-1266",
+    "volunteer_email": "omar.nguyen21@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0424",
+    "submission_id": "SUB-1091",
+    "volunteer_email": "maria.johnson40@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-10T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0425",
+    "submission_id": "SUB-1320",
+    "volunteer_email": "omar.patel5@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-09-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0426",
+    "submission_id": "SUB-1369",
+    "volunteer_email": "emily.khan55@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-05-15T00:00:00",
+    "closed": "2025-06-01T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0427",
+    "submission_id": "SUB-1320",
+    "volunteer_email": "emily.khan55@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-11T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0428",
+    "submission_id": "SUB-1154",
+    "volunteer_email": "sofia.patel71@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0429",
+    "submission_id": "SUB-1054",
+    "volunteer_email": "raj.lopez24@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-04-28T00:00:00",
+    "closed": "2025-05-07T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0430",
+    "submission_id": "SUB-1167",
+    "volunteer_email": "carlos.smith59@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-09-11T00:00:00",
+    "closed": "2025-10-04T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0431",
+    "submission_id": "SUB-1574",
+    "volunteer_email": "james.johnson62@example.org",
+    "outcome": "accepted",
+    "opened": "2025-02-27T00:00:00",
+    "closed": "2025-03-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0432",
+    "submission_id": "SUB-1357",
+    "volunteer_email": "lucas.khan11@example.org",
+    "outcome": "accepted",
+    "opened": "2025-05-26T00:00:00",
+    "closed": "2025-06-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0433",
+    "submission_id": "SUB-1520",
+    "volunteer_email": "JAMES.NGUYEN34@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-12-06T00:00:00",
+    "closed": "2025-12-23T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0434",
+    "submission_id": "SUB-1584",
+    "volunteer_email": "daniel.ali23@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-09T00:00:00",
+    "closed": "2025-03-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0435",
+    "submission_id": "SUB-1096",
+    "volunteer_email": "daniel.khan42@example.org",
+    "outcome": "accepted",
+    "opened": "2025-12-15T00:00:00",
+    "closed": "2025-12-28T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0436",
+    "submission_id": "SUB-1382",
+    "volunteer_email": "david.ali75@example.org",
+    "outcome": "declined",
+    "opened": "2025-02-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0437",
+    "submission_id": "SUB-1029",
+    "volunteer_email": "carlos.ali10@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0438",
+    "submission_id": "SUB-1275",
+    "volunteer_email": "emily.brown76@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-18T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0439",
+    "submission_id": "SUB-1332",
+    "volunteer_email": "emily.ali72@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-25T00:00:00",
+    "closed": "2025-02-05T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0440",
+    "submission_id": "SUB-1056",
+    "volunteer_email": "wei.brown9@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0441",
+    "submission_id": "SUB-1261",
+    "volunteer_email": "aisha.patel22@example.org",
+    "outcome": "accepted",
+    "opened": "2026-01-30T00:00:00",
+    "closed": "2026-01-31T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0442",
+    "submission_id": "SUB-1213",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0443",
+    "submission_id": "SUB-1123",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-10T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0444",
+    "submission_id": "SUB-1134",
+    "volunteer_email": "lucas.khan45@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-07-08T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0445",
+    "submission_id": "SUB-1456",
+    "volunteer_email": "PRIYA.KHAN49@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-10-16T00:00:00",
+    "closed": "2025-11-10T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0446",
+    "submission_id": "SUB-1432",
+    "volunteer_email": "david.chen47@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-11T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0447",
+    "submission_id": "SUB-1041",
+    "volunteer_email": "EMILY.NGUYEN65@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-08-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0448",
+    "submission_id": "SUB-1507",
+    "volunteer_email": "MARIA.ALI67@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-09-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0449",
+    "submission_id": "SUB-1447",
+    "volunteer_email": "carlos.ali10@example.org",
+    "outcome": "declined",
+    "opened": "2025-09-02T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0450",
+    "submission_id": "SUB-1307",
+    "volunteer_email": "priya.nguyen31@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0451",
+    "submission_id": "SUB-1046",
+    "volunteer_email": "EMILY.NGUYEN65@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-06T00:00:00",
+    "closed": "2025-08-28T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0452",
+    "submission_id": "SUB-1582",
+    "volunteer_email": "MARIA.NGUYEN32@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-10-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0453",
+    "submission_id": "SUB-1116",
+    "volunteer_email": "carlos.smith59@example.org",
+    "outcome": "accepted",
+    "opened": "2025-04-04T00:00:00",
+    "closed": "2025-04-07T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0454",
+    "submission_id": "SUB-1426",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "DECLINED",
+    "opened": "2026-01-06T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0455",
+    "submission_id": "SUB-1271",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-04-06T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0456",
+    "submission_id": "SUB-1265",
+    "volunteer_email": "john.johnson13@example.org",
+    "outcome": null,
+    "opened": "2025-01-10T00:00:00",
+    "closed": "2025-01-14T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0457",
+    "submission_id": "SUB-1013",
+    "volunteer_email": "omar.nguyen21@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0458",
+    "submission_id": "SUB-1310",
+    "volunteer_email": "david.patel79@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0459",
+    "submission_id": "SUB-1309",
+    "volunteer_email": "lucas.khan11@example.org",
+    "outcome": "accepted",
+    "opened": "2025-01-08T00:00:00",
+    "closed": "2025-01-31T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0460",
+    "submission_id": "SUB-1192",
+    "volunteer_email": "kwame.patel3@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0461",
+    "submission_id": "SUB-1446",
+    "volunteer_email": "sarah.nguyen68@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0462",
+    "submission_id": "SUB-1485",
+    "volunteer_email": "daniel.brown54@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-03-27T00:00:00",
+    "closed": "2025-04-12T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0463",
+    "submission_id": "SUB-1482",
+    "volunteer_email": "daniel.chen2@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0464",
+    "submission_id": "SUB-1583",
+    "volunteer_email": "aisha.chen50@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-05T00:00:00",
+    "closed": "2025-01-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0465",
+    "submission_id": "SUB-1507",
+    "volunteer_email": "omar.patel74@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-11T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0466",
+    "submission_id": "SUB-1499",
+    "volunteer_email": "priya.johnson51@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-10-30T00:00:00",
+    "closed": "2025-11-07T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0467",
+    "submission_id": "SUB-1062",
+    "volunteer_email": "MARIA.ALI67@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-10-23T00:00:00",
+    "closed": "2025-11-01T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0468",
+    "submission_id": "SUB-1427",
+    "volunteer_email": "carlos.ali60@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-11-15T00:00:00",
+    "closed": "2025-11-30T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0469",
+    "submission_id": "SUB-1446",
+    "volunteer_email": "daniel.chen2@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2026-01-07T00:00:00",
+    "closed": "2026-01-22T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0470",
+    "submission_id": "SUB-1237",
+    "volunteer_email": "sarah.patel64@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0471",
+    "submission_id": "SUB-1134",
+    "volunteer_email": "omar.chen37@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-07-19T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0472",
+    "submission_id": "SUB-1483",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "declined",
+    "opened": "2025-05-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0473",
+    "submission_id": "SUB-1494",
+    "volunteer_email": "james.patel16@example.org",
+    "outcome": "accepted",
+    "opened": "2025-03-22T00:00:00",
+    "closed": "2025-04-17T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0474",
+    "submission_id": "SUB-1425",
+    "volunteer_email": "sarah.brown63@example.org",
+    "outcome": "accepted",
+    "opened": "2025-04-18T00:00:00",
+    "closed": "2025-04-30T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0475",
+    "submission_id": "SUB-1267",
+    "volunteer_email": "lucas.khan45@example.org",
+    "outcome": "declined",
+    "opened": "2025-03-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0476",
+    "submission_id": "SUB-1065",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-11-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0477",
+    "submission_id": "SUB-1498",
+    "volunteer_email": "daniel.khan33@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-07-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0478",
+    "submission_id": "SUB-1154",
+    "volunteer_email": "EMILY.NGUYEN65@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-02-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0479",
+    "submission_id": "SUB-1468",
+    "volunteer_email": "lucas.brown14@example.org",
+    "outcome": "declined",
+    "opened": "2026-02-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0480",
+    "submission_id": "SUB-1575",
+    "volunteer_email": "omar.patel5@example.org",
+    "outcome": "declined",
+    "opened": "2025-03-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0481",
+    "submission_id": "SUB-1370",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0482",
+    "submission_id": "SUB-1101",
+    "volunteer_email": "daniel.smith19@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-21T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0483",
+    "submission_id": "SUB-1206",
+    "volunteer_email": "john.garcia56@example.org",
+    "outcome": "declined",
+    "opened": "2026-01-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0484",
+    "submission_id": "SUB-1485",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-03-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0485",
+    "submission_id": "SUB-1424",
+    "volunteer_email": "SARAH.PATEL46@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-05-06T00:00:00",
+    "closed": "2025-06-01T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0486",
+    "submission_id": "SUB-1233",
+    "volunteer_email": "raj.brown17@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-07-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0487",
+    "submission_id": "SUB-1528",
+    "volunteer_email": "SARAH.PATEL46@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-08-15T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0488",
+    "submission_id": "SUB-1529",
+    "volunteer_email": "grace.chen8@example.org",
+    "outcome": "accepted",
+    "opened": "2025-06-11T00:00:00",
+    "closed": "2025-06-25T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0489",
+    "submission_id": "SUB-1062",
+    "volunteer_email": "aisha.chen50@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0490",
+    "submission_id": "SUB-1588",
+    "volunteer_email": "MEI.NGUYEN7@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2026-01-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0491",
+    "submission_id": "SUB-1429",
+    "volunteer_email": "priya.johnson51@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0492",
+    "submission_id": "SUB-1321",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "accepted",
+    "opened": "2025-05-24T00:00:00",
+    "closed": "2025-06-16T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0493",
+    "submission_id": "SUB-1413",
+    "volunteer_email": "emily.johnson57@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-10-06T00:00:00",
+    "closed": "2025-10-29T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0494",
+    "submission_id": "SUB-1353",
+    "volunteer_email": "priya.johnson51@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0495",
+    "submission_id": "SUB-1399",
+    "volunteer_email": "james.patel16@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0496",
+    "submission_id": "SUB-1523",
+    "volunteer_email": "fatima.johnson70@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0497",
+    "submission_id": "SUB-1023",
+    "volunteer_email": "kwame.patel3@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0498",
+    "submission_id": "SUB-1311",
+    "volunteer_email": "daniel.brown54@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-02-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0499",
+    "submission_id": "SUB-1265",
+    "volunteer_email": "sarah.patel64@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0500",
+    "submission_id": "SUB-1459",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-03T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0501",
+    "submission_id": "SUB-1595",
+    "volunteer_email": "emily.ali72@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-18T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0502",
+    "submission_id": "SUB-1358",
+    "volunteer_email": "sofia.ali38@example.org",
+    "outcome": "declined",
+    "opened": "2026-01-02T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0503",
+    "submission_id": "SUB-1386",
+    "volunteer_email": "mei.johnson66@example.org",
+    "outcome": "declined",
+    "opened": "2025-02-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0504",
+    "submission_id": "SUB-1369",
+    "volunteer_email": "mei.nguyen58@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-12-31T00:00:00",
+    "closed": "2026-01-03T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0505",
+    "submission_id": "SUB-1094",
+    "volunteer_email": "MEI.NGUYEN7@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-03-08T00:00:00",
+    "closed": "2025-03-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0506",
+    "submission_id": "SUB-1378",
+    "volunteer_email": "MARIA.ALI67@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-10-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0507",
+    "submission_id": "SUB-1270",
+    "volunteer_email": "omar.patel74@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0508",
+    "submission_id": "SUB-1426",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-03-07T00:00:00",
+    "closed": "2025-03-12T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0509",
+    "submission_id": "SUB-1525",
+    "volunteer_email": "MARIA.ALI67@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-04-19T00:00:00",
+    "closed": "2025-05-13T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0510",
+    "submission_id": "SUB-1160",
+    "volunteer_email": "sofia.patel71@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-03-02T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0511",
+    "submission_id": "SUB-1112",
+    "volunteer_email": "james.chen15@example.org",
+    "outcome": "accepted",
+    "opened": "2025-05-29T00:00:00",
+    "closed": "2025-06-02T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0512",
+    "submission_id": "SUB-1380",
+    "volunteer_email": "carlos.nguyen39@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0513",
+    "submission_id": "SUB-1146",
+    "volunteer_email": "kwame.chen18@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0514",
+    "submission_id": "SUB-1290",
+    "volunteer_email": "KWAME.PATEL27@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2026-01-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0515",
+    "submission_id": "SUB-1560",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-23T00:00:00",
+    "closed": "2025-02-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0516",
+    "submission_id": "SUB-1463",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2025-09-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0517",
+    "submission_id": "SUB-1141",
+    "volunteer_email": "sarah.patel64@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2026-01-25T00:00:00",
+    "closed": "2026-01-30T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0518",
+    "submission_id": "SUB-1333",
+    "volunteer_email": "lucas.khan11@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-07T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0519",
+    "submission_id": "SUB-1238",
+    "volunteer_email": "aisha.chen50@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-01-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0520",
+    "submission_id": "SUB-1284",
+    "volunteer_email": "lucas.khan11@example.org",
+    "outcome": null,
+    "opened": "2025-12-29T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0521",
+    "submission_id": "SUB-1316",
+    "volunteer_email": "sofia.patel71@example.org",
+    "outcome": "accepted",
+    "opened": "2025-11-26T00:00:00",
+    "closed": "2025-12-16T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0522",
+    "submission_id": "SUB-1554",
+    "volunteer_email": "maria.garcia73@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-19T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0523",
+    "submission_id": "SUB-1514",
+    "volunteer_email": "daniel.chen2@example.org",
+    "outcome": "accepted",
+    "opened": "2025-09-30T00:00:00",
+    "closed": "2025-10-09T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0524",
+    "submission_id": "SUB-1210",
+    "volunteer_email": "priya.nguyen31@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-10-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0525",
+    "submission_id": "SUB-1411",
+    "volunteer_email": "david.ali75@example.org",
+    "outcome": "accepted",
+    "opened": "2025-01-12T00:00:00",
+    "closed": "2025-01-26T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0526",
+    "submission_id": "SUB-1024",
+    "volunteer_email": "MARIA.ALI67@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-05-12T00:00:00",
+    "closed": "2025-05-30T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0527",
+    "submission_id": "SUB-1172",
+    "volunteer_email": "omar.ali36@example.org",
+    "outcome": "accepted",
+    "opened": "2025-05-11T00:00:00",
+    "closed": "2025-05-21T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0528",
+    "submission_id": "SUB-1417",
+    "volunteer_email": "omar.nguyen21@example.org",
+    "outcome": "accepted",
+    "opened": "2025-06-16T00:00:00",
+    "closed": "2025-06-26T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0529",
+    "submission_id": "SUB-1399",
+    "volunteer_email": "omar.lopez12@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-07-31T00:00:00",
+    "closed": "2025-08-13T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0530",
+    "submission_id": "SUB-1123",
+    "volunteer_email": "sarah.ali6@example.org",
+    "outcome": "accepted",
+    "opened": "2026-01-21T00:00:00",
+    "closed": "2026-02-06T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0531",
+    "submission_id": "SUB-1520",
+    "volunteer_email": "sarah.patel64@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-02-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0532",
+    "submission_id": "SUB-1475",
+    "volunteer_email": "fatima.johnson70@example.org",
+    "outcome": null,
+    "opened": "2025-09-05T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0533",
+    "submission_id": "SUB-1239",
+    "volunteer_email": "daniel.chen2@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0534",
+    "submission_id": "SUB-1568",
+    "volunteer_email": "james.patel16@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0535",
+    "submission_id": "SUB-1145",
+    "volunteer_email": "david.chen47@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-03-28T00:00:00",
+    "closed": "2025-04-27T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0536",
+    "submission_id": "SUB-1568",
+    "volunteer_email": "emily.johnson57@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-26T00:00:00",
+    "closed": "2025-09-16T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0537",
+    "submission_id": "SUB-1171",
+    "volunteer_email": "grace.smith0@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-09-04T00:00:00",
+    "closed": "2025-10-01T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0538",
+    "submission_id": "SUB-1389",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-04-19T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0539",
+    "submission_id": "SUB-1046",
+    "volunteer_email": "omar.ali20@example.org",
+    "outcome": "accepted",
+    "opened": "2025-10-16T00:00:00",
+    "closed": "2025-10-29T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0540",
+    "submission_id": "SUB-1125",
+    "volunteer_email": "raj.brown17@example.org",
+    "outcome": "declined",
+    "opened": "2025-05-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0541",
+    "submission_id": "SUB-1516",
+    "volunteer_email": "maria.johnson40@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0542",
+    "submission_id": "SUB-1279",
+    "volunteer_email": "priya.nguyen31@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0543",
+    "submission_id": "SUB-1336",
+    "volunteer_email": "daniel.chen2@example.org",
+    "outcome": "declined",
+    "opened": "2025-03-10T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0544",
+    "submission_id": "SUB-1487",
+    "volunteer_email": "grace.smith0@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-12-11T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0545",
+    "submission_id": "SUB-1402",
+    "volunteer_email": "sarah.nguyen68@example.org",
+    "outcome": "accepted",
+    "opened": "2025-11-29T00:00:00",
+    "closed": "2025-12-28T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0546",
+    "submission_id": "SUB-1455",
+    "volunteer_email": "james.chen15@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-07-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0547",
+    "submission_id": "SUB-1396",
+    "volunteer_email": "aisha.patel22@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0548",
+    "submission_id": "SUB-1473",
+    "volunteer_email": "david.chen47@example.org",
+    "outcome": null,
+    "opened": "2025-08-16T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0549",
+    "submission_id": "SUB-1020",
+    "volunteer_email": "omar.patel35@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-30T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0550",
+    "submission_id": "SUB-1310",
+    "volunteer_email": "fatima.lopez28@example.org",
+    "outcome": "accepted",
+    "opened": "2025-09-10T00:00:00",
+    "closed": "2025-09-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0551",
+    "submission_id": "SUB-1504",
+    "volunteer_email": "sofia.khan77@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-04-11T00:00:00",
+    "closed": "2025-04-15T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0552",
+    "submission_id": "SUB-1284",
+    "volunteer_email": "emily.ali72@example.org",
+    "outcome": "accepted",
+    "opened": "2025-03-29T00:00:00",
+    "closed": "2025-04-01T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0553",
+    "submission_id": "SUB-1131",
+    "volunteer_email": "grace.chen8@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-10-19T00:00:00",
+    "closed": "2025-10-26T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0554",
+    "submission_id": "SUB-1023",
+    "volunteer_email": "sarah.nguyen68@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-12-15T00:00:00",
+    "closed": "2025-12-16T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0555",
+    "submission_id": "SUB-1437",
+    "volunteer_email": "sarah.ali6@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-06-15T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0556",
+    "submission_id": "SUB-1280",
+    "volunteer_email": "james.chen15@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0557",
+    "submission_id": "SUB-1229",
+    "volunteer_email": "sarah.ali6@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0558",
+    "submission_id": "SUB-1005",
+    "volunteer_email": "aisha.chen50@example.org",
+    "outcome": "declined",
+    "opened": "2025-02-11T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0559",
+    "submission_id": "SUB-1231",
+    "volunteer_email": "daniel.brown54@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-05-08T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0560",
+    "submission_id": "SUB-1318",
+    "volunteer_email": "grace.chen8@example.org",
+    "outcome": null,
+    "opened": "2025-02-19T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0561",
+    "submission_id": "SUB-1442",
+    "volunteer_email": "kwame.patel3@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-17T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0562",
+    "submission_id": "SUB-1253",
+    "volunteer_email": "john.johnson13@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-24T00:00:00",
+    "closed": "2025-07-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0563",
+    "submission_id": "SUB-1242",
+    "volunteer_email": "wei.brown9@example.org",
+    "outcome": "declined",
+    "opened": "2025-11-14T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0564",
+    "submission_id": "SUB-1457",
+    "volunteer_email": "omar.patel74@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-01T00:00:00",
+    "closed": "2025-02-12T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0565",
+    "submission_id": "SUB-1066",
+    "volunteer_email": "james.patel16@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-08-15T00:00:00",
+    "closed": "2025-08-18T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0566",
+    "submission_id": "SUB-1104",
+    "volunteer_email": "MEI.NGUYEN7@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-05-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0567",
+    "submission_id": "SUB-1098",
+    "volunteer_email": "david.patel79@example.org",
+    "outcome": "declined",
+    "opened": "2025-04-30T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0568",
+    "submission_id": "SUB-1464",
+    "volunteer_email": "PRIYA.KHAN49@EXAMPLE.ORG",
+    "outcome": "accepted",
+    "opened": "2025-08-08T00:00:00",
+    "closed": "2025-08-19T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0569",
+    "submission_id": "SUB-1026",
+    "volunteer_email": "mei.nguyen58@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-28T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0570",
+    "submission_id": "SUB-1012",
+    "volunteer_email": "emily.brown76@example.org",
+    "outcome": "declined",
+    "opened": "2025-10-31T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0571",
+    "submission_id": "SUB-1586",
+    "volunteer_email": "james.patel16@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-05-12T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0572",
+    "submission_id": "SUB-1455",
+    "volunteer_email": "daniel.ali23@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-23T00:00:00",
+    "closed": "2025-02-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0573",
+    "submission_id": "SUB-1446",
+    "volunteer_email": "EMILY.NGUYEN65@EXAMPLE.ORG",
+    "outcome": "declined",
+    "opened": "2026-01-22T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0574",
+    "submission_id": "SUB-1150",
+    "volunteer_email": "carlos.ali60@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0575",
+    "submission_id": "SUB-1530",
+    "volunteer_email": "david.ali75@example.org",
+    "outcome": "declined",
+    "opened": "2025-03-16T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0576",
+    "submission_id": "SUB-1432",
+    "volunteer_email": "james.patel44@example.org",
+    "outcome": "declined",
+    "opened": "2025-04-13T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0577",
+    "submission_id": "SUB-1070",
+    "volunteer_email": "FATIMA.SMITH43@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-09-01T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0578",
+    "submission_id": "SUB-1339",
+    "volunteer_email": "omar.patel74@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-21T00:00:00",
+    "closed": "2025-07-02T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0579",
+    "submission_id": "SUB-1166",
+    "volunteer_email": "john.johnson13@example.org",
+    "outcome": "accepted",
+    "opened": "2025-01-22T00:00:00",
+    "closed": "2025-02-12T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0580",
+    "submission_id": "SUB-1228",
+    "volunteer_email": "maria.johnson29@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-04-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0581",
+    "submission_id": "SUB-1384",
+    "volunteer_email": "emily.smith26@example.org",
+    "outcome": "declined",
+    "opened": "2025-01-04T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0582",
+    "submission_id": "SUB-1366",
+    "volunteer_email": "kwame.patel3@example.org",
+    "outcome": "accepted",
+    "opened": "2025-03-14T00:00:00",
+    "closed": "2025-04-04T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0583",
+    "submission_id": "SUB-1599",
+    "volunteer_email": "SARAH.PATEL46@EXAMPLE.ORG",
+    "outcome": "ACCEPTED",
+    "opened": "2025-01-16T00:00:00",
+    "closed": "2025-01-22T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0584",
+    "submission_id": "SUB-1224",
+    "volunteer_email": "daniel.khan33@example.org",
+    "outcome": "declined",
+    "opened": "2025-06-23T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0585",
+    "submission_id": "SUB-1182",
+    "volunteer_email": "daniel.smith25@example.org",
+    "outcome": "accepted",
+    "opened": "2025-05-15T00:00:00",
+    "closed": "2025-06-11T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0586",
+    "submission_id": "SUB-1140",
+    "volunteer_email": "wei.ali48@example.org",
+    "outcome": "declined",
+    "opened": "2025-02-26T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0587",
+    "submission_id": "SUB-1312",
+    "volunteer_email": "mei.nguyen58@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-07-10T00:00:00",
+    "closed": "2025-08-08T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0588",
+    "submission_id": "SUB-1066",
+    "volunteer_email": "james.chen15@example.org",
+    "outcome": "accepted",
+    "opened": "2025-03-08T00:00:00",
+    "closed": "2025-03-26T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0589",
+    "submission_id": "SUB-1387",
+    "volunteer_email": "david.chen47@example.org",
+    "outcome": "declined",
+    "opened": "2025-08-08T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0590",
+    "submission_id": "SUB-1047",
+    "volunteer_email": "john.lopez78@example.org",
+    "outcome": "accepted",
+    "opened": "2025-10-02T00:00:00",
+    "closed": "2025-10-13T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0591",
+    "submission_id": "SUB-1253",
+    "volunteer_email": "sarah.ali6@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-05-24T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0592",
+    "submission_id": "SUB-1214",
+    "volunteer_email": "carlos.ali10@example.org",
+    "outcome": "declined",
+    "opened": "2025-12-06T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0593",
+    "submission_id": "SUB-1520",
+    "volunteer_email": "PRIYA.KHAN49@EXAMPLE.ORG",
+    "outcome": "DECLINED",
+    "opened": "2025-11-27T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0594",
+    "submission_id": "SUB-1510",
+    "volunteer_email": "mei.johnson66@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-06-14T00:00:00",
+    "closed": "2025-07-07T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0595",
+    "submission_id": "SUB-1506",
+    "volunteer_email": "carlos.ali60@example.org",
+    "outcome": "declined",
+    "opened": "2025-07-25T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0596",
+    "submission_id": "SUB-1212",
+    "volunteer_email": "fatima.lopez28@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-08-20T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0597",
+    "submission_id": "SUB-1223",
+    "volunteer_email": "carlos.nguyen39@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-07-13T00:00:00",
+    "closed": "2025-07-22T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0598",
+    "submission_id": "SUB-1563",
+    "volunteer_email": "carlos.ali10@example.org",
+    "outcome": "ACCEPTED",
+    "opened": "2025-02-13T00:00:00",
+    "closed": "2025-02-21T00:00:00"
+  },
+  {
+    "case_ref": "CASE-0599",
+    "submission_id": "SUB-1597",
+    "volunteer_email": "omar.patel5@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-11-15T00:00:00",
+    "closed": null
+  },
+  {
+    "case_ref": "CASE-0600",
+    "submission_id": "SUB-1478",
+    "volunteer_email": "emily.khan55@example.org",
+    "outcome": "DECLINED",
+    "opened": "2025-09-12T00:00:00",
+    "closed": null
+  }
+]
