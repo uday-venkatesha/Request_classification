@@ -12,6 +12,7 @@ class AidRequest(Base):
     __tablename__ = "requests"
 
     id: Mapped[int] = mapped_column(primary_key=True)
+    submission_id: Mapped[str | None] = mapped_column(String(20), unique=True)  # id from the intake form
     text: Mapped[str] = mapped_column(Text)
     source: Mapped[str] = mapped_column(String(20))  # web_form, phone, walk_in
     city: Mapped[str | None] = mapped_column(String(50))
