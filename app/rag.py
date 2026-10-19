@@ -5,8 +5,10 @@ from langchain_postgres import PGVector
 from langchain_text_splitters import MarkdownHeaderTextSplitter
 
 from app.db import engine
+from app.llm import get_client
 
 DOCS = Path(__file__).parent.parent / "data" / "docs"
+PROMPTS = Path(__file__).parent.parent / "prompts"
 COLLECTION = "program_docs"
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
@@ -40,12 +42,36 @@ def get_store():
     return PGVector(embeddings, collection_name=COLLECTION, connection=engine, use_jsonb=True)
 
 
-if __name__ == "__main__":
-    print("chunks stored:", ingest_docs())
+def retrieve(question, k=4):
+    """The k closest chunks as (doc, distance). Lower distance means a closer match."""
+    return get_store().similarity_search_with_score(question, k=k)
 
-    store = get_store()
-    for question in ["How often can I go to the food pantry?", "Can I bring my dog to the shelter?",
-                     "Do you help with criminal cases?"]:
-        print(f"\nQ: {question}")
-        for doc, distance in store.similarity_search_with_score(question, k=2):
-            print(f"  {distance:.3f}  {doc.page_content.splitlines()[0]}  ({doc.metadata['source']})")
+
+def answer(question, model_name="gpt-4o", prompt_version="v1"):
+    results = retrieve(question)
+    context = "\n\n".join(f"[{i}] {doc.page_content}" for i, (doc, _) in enumerate(results, start=1))
+    system = (PROMPTS / f"rag_{prompt_version}.txt").read_text().format(context=context)
+
+    client, model = get_client(model_name)
+    response = client.chat.completions.create(
+        model=model,
+        messages=[{"role": "system", "content": system}, {"role": "user", "content": question}],
+        temperature=0,
+    )
+    sources = [{"n": i, "title": doc.page_content.splitlines()[0], "file": doc.metadata["source"],
+                "distance": round(distance, 3)} for i, (doc, distance) in enumerate(results, start=1)]
+    return {"answer": response.choices[0].message.content, "sources": sources}
+
+
+if __name__ == "__main__":
+    for question in [
+        "How often can I go to the food pantry?",
+        "My landlord changed the locks, is that allowed?",
+        "Can I bring my dog to the shelter?",
+        "How much do you pay for prescriptions?",
+        "What is the capital of France?",
+    ]:
+        result = answer(question)
+        print(f"\nQ: {question}\nA: {result['answer']}")
+        for s in result["sources"][:2]:
+            print(f"   [{s['n']}] {s['distance']}  {s['title']}")
