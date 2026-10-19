@@ -6,6 +6,13 @@ from sqlalchemy.orm import Mapped, mapped_column
 from app.db import Base, engine
 
 CATEGORIES = ["food", "shelter", "medical", "legal", "education", "mental_health"]
+CITY_COORDS = {
+    "Austin": (30.27, -97.74),
+    "Round Rock": (30.51, -97.68),
+    "San Marcos": (29.88, -97.94),
+    "Georgetown": (30.63, -97.68),
+    "Pflugerville": (30.44, -97.62),
+}
 
 
 class AidRequest(Base):

@@ -8,15 +8,8 @@ import pandas as pd
 from sqlalchemy import text
 
 from app.db import SessionLocal, engine
-from app.models import AidRequest, Base, Case, Volunteer
+from app.models import CITY_COORDS, AidRequest, Base, Case, Volunteer
 
-CITY_COORDS = {
-    "Austin": (30.27, -97.74),
-    "Round Rock": (30.51, -97.68),
-    "San Marcos": (29.88, -97.94),
-    "Georgetown": (30.63, -97.68),
-    "Pflugerville": (30.44, -97.62),
-}
 SOURCES = {"web": "web_form", "web form": "web_form", "phone": "phone", "phone call": "phone",
            "walk-in": "walk_in", "walk in": "walk_in"}
 SKILLS = {"food": "food", "food bank": "food", "shelter": "shelter", "housing": "shelter",

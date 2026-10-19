@@ -11,3 +11,19 @@ class Classification(BaseModel):
     category: Category
     urgency: Literal["low", "medium", "high"]
     confidence: float = Field(ge=0, le=1)
+
+
+class RequestIn(BaseModel):
+    text: str = Field(min_length=10, examples=["We were evicted today and have nowhere to sleep."])
+    source: Literal["web_form", "phone", "walk_in"] = "web_form"
+    city: str | None = Field(default=None, examples=["Austin"])
+
+
+class RequestOut(BaseModel):
+    id: int
+    category: Category
+    urgency: str
+    confidence: float
+    reason: str
+    status: str
+    queue: str

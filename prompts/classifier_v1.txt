@@ -18,6 +18,9 @@ Urgency:
 
 Confidence is a number from 0 to 1. Use a lower value when the request is vague or mixes needs equally.
 
+Reason is one plain sentence in your own words about the person's situation, for example
+"Family has no food and young children at home." Do not repeat the category or urgency values in it.
+
 Examples:
 
 Request: "no food since yesterday, 2 kids at home, please help"
