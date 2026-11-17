@@ -31,3 +31,10 @@ class RequestOut(BaseModel):
 
 class AskIn(BaseModel):
     question: str = Field(min_length=3, max_length=1000, examples=["How often can I visit the food pantry?"])
+
+
+class ReviewIn(BaseModel):
+    approve: bool
+    volunteer_id: int | None = Field(default=None, description="Leave empty to use the best match")
+    category: Category | None = Field(default=None, description="Set only to correct the classifier")
+    note: str | None = None
