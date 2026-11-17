@@ -7,3 +7,4 @@ mlruns/
 *.joblib
 data/eval/results/
 .vscode/
+reports/

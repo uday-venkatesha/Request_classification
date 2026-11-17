@@ -1,0 +1,11 @@
+.git
+.venv
+.env
+__pycache__
+data/raw
+data/eval
+docs
+mlruns
+reports
+tests
+k8s

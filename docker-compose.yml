@@ -14,8 +14,23 @@ services:
       interval: 5s
       retries: 10
 
+  api:
+    build: .
+    env_file: .env
+    environment:
+      # inside Docker the database is reached by its service name, not localhost
+      DATABASE_URL: postgresql+psycopg://aid:aid@postgres:5432/aidroute
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Dashboards and experiment tracking are only started when asked for:
+  #   docker compose --profile tools up -d
   metabase:
     image: metabase/metabase:v0.50.26
+    profiles: ["tools"]
     ports:
       - "3000:3000"
     volumes:
@@ -26,6 +41,19 @@ services:
       postgres:
         condition: service_healthy
 
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.19.0
+    profiles: ["tools"]
+    command: >
+      mlflow server --host 0.0.0.0 --port 5000
+      --backend-store-uri sqlite:////mlflow/mlflow.db
+      --artifacts-destination /mlflow/artifacts
+    ports:
+      - "5001:5000"  # 5000 is taken by AirPlay on macOS
+    volumes:
+      - mlflow-data:/mlflow
+
 volumes:
   pgdata:
   metabase-data:
+  mlflow-data:
