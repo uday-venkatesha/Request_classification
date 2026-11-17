@@ -1,0 +1,55 @@
+# The FastAPI service. Two replicas, so one can restart without downtime.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aidroute-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: aidroute-api
+  template:
+    metadata:
+      labels:
+        app: aidroute-api
+    spec:
+      containers:
+        - name: api
+          image: aidroute:latest
+          imagePullPolicy: IfNotPresent  # the image is loaded into the cluster, not pulled from a registry
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - secretRef:
+                name: aidroute-secrets  # API keys and DATABASE_URL
+          # Traffic is only sent to a pod once /health answers
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          # A pod that stops answering is restarted
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 20
+            periodSeconds: 15
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              memory: 768Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aidroute-api
+spec:
+  selector:
+    app: aidroute-api
+  ports:
+    - port: 80
+      targetPort: 8000
