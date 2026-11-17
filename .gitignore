@@ -6,3 +6,4 @@ __pycache__/
 mlruns/
 *.joblib
 data/eval/results/
+.vscode/
