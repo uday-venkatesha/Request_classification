@@ -9,3 +9,5 @@ uvicorn==0.34.0
 langchain-text-splitters==0.3.4
 langchain-openai==0.2.14
 langchain-postgres==0.0.12
+scikit-learn==1.9.1
+joblib==1.6.0
