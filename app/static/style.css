@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #f4f6f8; color: #1f2933; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { margin: 0; font-size: 28px; color: #1f4e79; }
+h2 { font-size: 17px; margin: 28px 0 10px; color: #3e4c59; }
+.intro { margin: 6px 0 24px; color: #5f6b7a; }
+.card { background: #fff; border: 1px solid #dde3ea; border-radius: 10px; padding: 20px; margin-bottom: 16px; }
+label { display: block; font-size: 14px; font-weight: 600; margin: 16px 0 6px; color: #3e4c59; }
+label:first-child { margin-top: 0; }
+label span { font-weight: 400; color: #5f6b7a; }
+textarea, select, input { width: 100%; padding: 10px; border: 1px solid #c5ced8; border-radius: 6px; font: inherit; background: #fff; }
+textarea { min-height: 130px; resize: vertical; }
+button { padding: 10px 18px; border-radius: 6px; font: inherit; font-weight: 600; cursor: pointer; border: 1px solid #1f4e79; background: #fff; color: #1f4e79; }
+button.primary { background: #1f4e79; color: #fff; }
+button:disabled { opacity: 0.5; cursor: wait; }
+.actions { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
+.badges { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.badge { padding: 4px 12px; border-radius: 14px; font-weight: 700; font-size: 13px; background: #e8f1fb; color: #1f4e79; }
+.badge.high { background: #fde8e8; color: #9b1c1c; }
+.badge.medium { background: #fdf3e6; color: #9a5b13; }
+.badge.low { background: #e7f5ee; color: #1e6b45; }
+.muted { color: #5f6b7a; font-size: 14px; }
+.notes { background: #f4f6f8; border-radius: 6px; padding: 10px 12px; font-size: 14px; margin-top: 12px; }
+.notice { background: #fde8e8; border: 1px solid #f5b5b5; color: #7a1717; border-radius: 8px; padding: 14px 16px; margin-bottom: 16px; font-weight: 600; }
+.error { color: #9b1c1c; margin-top: 12px; }
+.hidden { display: none; }
+footer { font-size: 14px; color: #5f6b7a; margin-top: 24px; }
+a { color: #1f4e79; }

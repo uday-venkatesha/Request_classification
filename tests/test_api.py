@@ -9,12 +9,13 @@ os.environ.setdefault("MESH_API_KEY", "test-key")
 
 import pytest
 from fastapi.testclient import TestClient
+from sqlalchemy import delete
 
 from app import agent, main, rag
 from app.db import SessionLocal
 from app.llm import mask_pii
 from app.matching import make_features
-from app.models import AidRequest
+from app.models import AidRequest, AuditLog, Case, Volunteer
 from app.schemas import Classification
 
 
@@ -43,10 +44,68 @@ def test_health(client):
     assert client.get("/health").json() == {"status": "ok"}
 
 
-def test_home_page_loads(client):
-    response = client.get("/")
-    assert response.status_code == 200
-    assert "AidRoute" in response.text
+def test_pages_load(client):
+    assert "Ask for help" in client.get("/").text
+    assert "Volunteer portal" in client.get("/volunteer").text
+
+
+def test_intake_answers_at_once_and_runs_the_agent_afterwards(client, monkeypatch):
+    handled = []
+    monkeypatch.setattr(main.agent, "run_in_background", handled.append)
+
+    body = client.post("/intake", json={"text": "We need groceries this week.", "city": "Austin"}).json()
+    assert body["crisis_message"] is None
+    assert handled == [body["request_id"]]  # the agent was started for this request
+
+    with SessionLocal() as session:
+        session.delete(session.get(AidRequest, body["request_id"]))
+        session.commit()
+
+
+def test_intake_shows_the_hotline_for_crisis_language(client, monkeypatch):
+    monkeypatch.setattr(main.agent, "run_in_background", lambda request_id: None)
+
+    body = client.post("/intake", json={"text": "I have nothing left and I want to end my life."}).json()
+    assert "988" in body["crisis_message"]
+
+    with SessionLocal() as session:
+        session.delete(session.get(AidRequest, body["request_id"]))
+        session.commit()
+
+
+def test_volunteer_accepts_and_finishes_a_case(client):
+    # Set up one volunteer with one new case
+    with SessionLocal() as session:
+        volunteer = Volunteer(name="Test Volunteer", email="test.volunteer@example.org", skills=["food"],
+                              availability=["weekends"], city="Austin", active=True)
+        request = AidRequest(text="We need groceries this week.", source="web_form", city="Austin",
+                             category="food", urgency="medium", status="assigned", contact="512-555-0199")
+        session.add_all([volunteer, request])
+        session.flush()
+        case = Case(request_id=request.id, volunteer_id=volunteer.id, status="open")
+        session.add(case)
+        session.commit()
+        volunteer_id, request_id, case_id = volunteer.id, request.id, case.id
+
+    try:
+        listed = client.get(f"/volunteers/{volunteer_id}/cases").json()
+        assert listed[0]["case_id"] == case_id
+        assert listed[0]["contact"] == "512-555-0199"
+
+        assert client.post(f"/cases/{case_id}/respond", json={"action": "accept"}).json()["case_status"] == "accepted"
+        # A case can only be accepted once
+        assert client.post(f"/cases/{case_id}/respond", json={"action": "accept"}).status_code == 409
+
+        finished = client.post(f"/cases/{case_id}/respond", json={"action": "done"}).json()
+        assert finished["request_status"] == "closed"
+        assert client.get(f"/volunteers/{volunteer_id}/cases").json() == []  # finished cases leave the list
+    finally:
+        with SessionLocal() as session:
+            session.execute(delete(AuditLog).where(AuditLog.request_id == request_id))
+            session.execute(delete(Case).where(Case.id == case_id))
+            session.execute(delete(AidRequest).where(AidRequest.id == request_id))
+            session.execute(delete(Volunteer).where(Volunteer.id == volunteer_id))
+            session.commit()
 
 
 def test_request_is_classified_saved_and_routed(client, monkeypatch):

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volunteer portal - Bluebonnet Community Aid</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main>
+  <h1>Volunteer portal</h1>
+  <p class="intro">The cases assigned to you. New ones appear here by themselves.</p>
+
+  <div class="card">
+    <label for="who">Who are you?</label>
+    <select id="who"></select>
+  </div>
+
+  <div id="cases" class="hidden">
+    <h2 id="new-title">New cases</h2>
+    <div id="new-cases"></div>
+    <h2>In progress</h2>
+    <div id="active-cases"></div>
+  </div>
+
+  <footer><a href="/">Back to the request form</a></footer>
+</main>
+
+<script>
+  const who = document.getElementById("who");
+
+  // Small helper to create an element with text. textContent is used everywhere,
+  // so what people typed into the request form is shown as plain text and never run as HTML.
+  function el(tag, text, className) {
+    const node = document.createElement(tag);
+    if (text !== undefined) node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  }
+
+  function actionButton(label, caseId, action, primary) {
+    const button = el("button", label, primary ? "primary" : "");
+    button.type = "button";
+    button.addEventListener("click", async function () {
+      button.disabled = true;
+      await fetch("/cases/" + caseId + "/respond", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: action }),
+      });
+      loadVolunteers();
+      loadCases();
+    });
+    return button;
+  }
+
+  function caseCard(item) {
+    const card = el("div", undefined, "card");
+
+    const badges = el("div", undefined, "badges");
+    badges.append(el("span", item.category.replace("_", " "), "badge"));
+    badges.append(el("span", item.urgency + " urgency", "badge " + item.urgency));
+    card.append(badges);
+
+    card.append(el("p", item.text));
+    const assigned = new Date(item.assigned_at).toLocaleString();
+    card.append(el("p", (item.city || "City not given") + " · assigned " + assigned, "muted"));
+    card.append(el("p", "Contact: " + (item.contact || "none given, ask the office"), "muted"));
+    if (item.notes) card.append(el("div", "Notes from intake: " + item.notes, "notes"));
+
+    const actions = el("div", undefined, "actions");
+    if (item.status === "open") {
+      actions.append(actionButton("Accept", item.case_id, "accept", true));
+      actions.append(actionButton("Decline", item.case_id, "decline", false));
+    } else {
+      actions.append(actionButton("Mark as done", item.case_id, "done", true));
+    }
+    card.append(actions);
+    return card;
+  }
+
+  function fill(container, items, emptyText) {
+    container.replaceChildren();
+    if (items.length === 0) container.append(el("p", emptyText, "muted"));
+    items.forEach(function (item) { container.append(caseCard(item)); });
+  }
+
+  async function loadVolunteers() {
+    const response = await fetch("/volunteers");
+    const volunteers = await response.json();
+    // People with new cases are listed first, so they are easy to find
+    volunteers.sort(function (a, b) { return b.new_cases - a.new_cases; });
+
+    const chosen = who.value;
+    who.replaceChildren(el("option", "Choose your name"));
+    who.firstChild.value = "";
+    volunteers.forEach(function (v) {
+      const waiting = v.new_cases > 0 ? " - " + v.new_cases + " new" : "";
+      const option = el("option", v.name + " (" + (v.city || "no city") + ")" + waiting);
+      option.value = v.id;
+      who.append(option);
+    });
+    who.value = chosen;
+  }
+
+  async function loadCases() {
+    const section = document.getElementById("cases");
+    if (!who.value) {
+      section.classList.add("hidden");
+      return;
+    }
+    const response = await fetch("/volunteers/" + who.value + "/cases");
+    const cases = await response.json();
+    const newCases = cases.filter(function (item) { return item.status === "open"; });
+    const activeCases = cases.filter(function (item) { return item.status === "accepted"; });
+
+    document.getElementById("new-title").textContent = "New cases (" + newCases.length + ")";
+    fill(document.getElementById("new-cases"), newCases, "Nothing new right now.");
+    fill(document.getElementById("active-cases"), activeCases, "You have no cases in progress.");
+    section.classList.remove("hidden");
+  }
+
+  who.addEventListener("change", loadCases);
+  loadVolunteers();
+
+  // Check for newly assigned cases every 30 seconds
+  setInterval(function () { loadVolunteers(); loadCases(); }, 30000);
+</script>
+</body>
+</html>

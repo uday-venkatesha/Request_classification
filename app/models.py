@@ -30,6 +30,8 @@ class AidRequest(Base):
     confidence: Mapped[float | None] = mapped_column(Float)
     status: Mapped[str] = mapped_column(String(20), default="new")  # new, routed, in_review, assigned, closed
     review_reason: Mapped[str | None] = mapped_column(Text)  # why the agent sent it to a human
+    contact: Mapped[str | None] = mapped_column(String(100))  # phone or email, never sent to the LLM
+    summary: Mapped[str | None] = mapped_column(Text)  # the agent's notes for staff and the volunteer
     created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
 
 

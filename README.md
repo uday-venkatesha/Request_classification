@@ -98,8 +98,13 @@ python -m app.matching                # train the volunteer match model
 python -m app.rag                     # embed the program documents
 ```
 
-Start the API, then open http://localhost:8000 for a page where you can try requests,
-or http://localhost:8000/docs for the full API.
+Start the API. There are two pages and the API documentation:
+
+| Address | Who it is for |
+|---|---|
+| http://localhost:8000 | People who need help. They describe their problem and get a reference number. Classification, matching and assignment run in the background. |
+| http://localhost:8000/volunteer | Volunteers. They see the cases assigned to them and accept, decline or finish them. |
+| http://localhost:8000/docs | Developers and staff tools: review queue, audit trail, every endpoint. |
 
 ```bash
 docker compose up -d --build api
@@ -117,10 +122,13 @@ docker compose --profile tools up -d   # Metabase on :3000, MLflow on :5001
 |---|---|
 | `POST /requests` | Classify a request and put it in a team queue |
 | `GET /queues/{category}` | A team's waiting requests, most urgent first |
-| `POST /triage` | Run the full agent on a request |
+| `POST /intake` | Used by the public form: save the request, answer at once, run the agent in the background |
+| `POST /triage` | Run the full agent on a request and wait for the result |
 | `GET /review` | Requests waiting for a human decision, with suggested volunteers |
 | `POST /review/{id}` | Approve, correct or reject |
 | `GET /requests/{id}/audit` | Every step taken on a request |
+| `GET /volunteers/{id}/cases` | A volunteer's new cases and cases in progress |
+| `POST /cases/{id}/respond` | A volunteer accepts, declines or finishes a case |
 | `POST /ask` | Ask the assistant a question. Streams by default, `?stream=false` returns JSON |
 | `GET /health` | Health check |
 
@@ -218,6 +226,8 @@ generated or written for the project (`pipelines/generate_data.py`), so anyone c
 
 ## Known limits
 
+- The volunteer portal has no login. A volunteer picks their name from a list. Real use needs sign-in
+  before the portal is opened to the internet, because cases show contact details.
 - Crisis detection is a keyword list. It catches clear phrases and misses indirect ones.
 - PII masking covers phone numbers, emails and SSNs, not names or addresses.
 - The model's own confidence score is weakly related to being right, which is why review rules do not

@@ -111,8 +111,12 @@ def top_volunteers(request, k=3):
     with SessionLocal() as session:
         rates = acceptance_rates(session)
         volunteers = session.scalars(select(Volunteer).where(Volunteer.active)).all()
+        # Volunteers who already declined this request are not asked again
+        declined = set(session.scalars(
+            select(Case.volunteer_id).where(Case.request_id == request.id, Case.status == "declined")
+        ))
 
-    candidates = [v for v in volunteers if request.category in v.skills]
+    candidates = [v for v in volunteers if request.category in v.skills and v.id not in declined]
     if not candidates:
         return []
 

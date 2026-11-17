@@ -6,6 +6,7 @@ create a case, or send to a human). Two things are never left to the LLM:
   - the audit log, which records every step so each decision can be explained later
 """
 import json
+from datetime import datetime
 from pathlib import Path
 
 from sqlalchemy import func, select
@@ -184,6 +185,7 @@ def run_agent(request_id, model_name="gpt-4o"):
             result = send_to_review(session, request, {"reason": reason})
             write_audit(session, request, "safety_net", {"reason": reason}, result)
 
+        request.summary = summary  # shown to the reviewer and to the assigned volunteer
         session.commit()
         case_id = session.scalar(select(func.max(Case.id)).where(Case.request_id == request.id))
         return {
@@ -197,6 +199,20 @@ def run_agent(request_id, model_name="gpt-4o"):
             "summary": summary,
             "steps": audit_trail(session, request.id),
         }
+
+
+def run_in_background(request_id):
+    # Used by the public request form: the person gets an answer straight away and the
+    # agent works afterwards. If the agent fails (for example the LLM is down),
+    # the request goes to a human instead of sitting unnoticed.
+    try:
+        run_agent(request_id)
+    except Exception as e:
+        with SessionLocal() as session:
+            request = session.get(AidRequest, request_id)
+            reason = "automatic triage failed, please handle by hand"
+            result = send_to_review(session, request, {"reason": reason})
+            write_audit(session, request, "safety_net", {"reason": reason, "error": str(e)[:300]}, result)
 
 
 # ---------- human review ----------
@@ -235,4 +251,38 @@ def apply_review(request_id, approve, volunteer_id=None, category=None, note=Non
             result = {"status": "assigned", "case_id": case.id, "volunteer": volunteer.name}
 
         write_audit(session, request, "human_review", decision, result)
+        return result
+
+
+# ---------- volunteer responses ----------
+
+def respond_to_case(case_id, action):
+    """A volunteer accepts or declines a new case, or marks an accepted one as done.
+    Raises ValueError if that is not possible for the case."""
+    with SessionLocal() as session:
+        case = session.get(Case, case_id)
+        if case is None:
+            raise ValueError("Unknown case.")
+        request = session.get(AidRequest, case.request_id)
+        volunteer = session.get(Volunteer, case.volunteer_id)
+
+        if action == "accept" and case.status == "open":
+            case.status = "accepted"
+
+        elif action == "decline" and case.status == "open":
+            # Staff pick someone else. The match model will not suggest this volunteer again for this request.
+            case.status = "declined"
+            request.status = "in_review"
+            request.review_reason = f"{volunteer.name} declined the case"
+
+        elif action == "done" and case.status == "accepted" and case.closed_at is None:
+            # The case stays "accepted" so the match model keeps learning from it; closed_at marks it finished
+            case.closed_at = datetime.now()
+            request.status = "closed"
+
+        else:
+            raise ValueError(f"A case that is '{case.status}' cannot be changed with '{action}'.")
+
+        result = {"case_id": case.id, "case_status": case.status, "request_status": request.status}
+        write_audit(session, request, f"volunteer_{action}", {"volunteer_id": volunteer.id}, result)
         return result

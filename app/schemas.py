@@ -17,6 +17,7 @@ class RequestIn(BaseModel):
     text: str = Field(min_length=10, examples=["We were evicted today and have nowhere to sleep."])
     source: Literal["web_form", "phone", "walk_in"] = "web_form"
     city: str | None = Field(default=None, examples=["Austin"])
+    contact: str | None = Field(default=None, max_length=100, examples=["512-555-0199"])
 
 
 class RequestOut(BaseModel):
@@ -38,3 +39,7 @@ class ReviewIn(BaseModel):
     volunteer_id: int | None = Field(default=None, description="Leave empty to use the best match")
     category: Category | None = Field(default=None, description="Set only to correct the classifier")
     note: str | None = None
+
+
+class CaseResponseIn(BaseModel):
+    action: Literal["accept", "decline", "done"]
