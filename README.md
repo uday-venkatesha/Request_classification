@@ -98,7 +98,8 @@ python -m app.matching                # train the volunteer match model
 python -m app.rag                     # embed the program documents
 ```
 
-Start the API, then open http://localhost:8000/docs.
+Start the API, then open http://localhost:8000 for a page where you can try requests,
+or http://localhost:8000/docs for the full API.
 
 ```bash
 docker compose up -d --build api

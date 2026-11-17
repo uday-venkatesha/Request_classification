@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AidRoute</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #f4f6f8; color: #1f2933; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    h1 { margin: 0; font-size: 28px; color: #1f4e79; }
+    .intro { margin: 6px 0 24px; color: #5f6b7a; }
+    .card { background: #fff; border: 1px solid #dde3ea; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+    label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #3e4c59; }
+    textarea, select { width: 100%; padding: 10px; border: 1px solid #c5ced8; border-radius: 6px; font: inherit; background: #fff; }
+    textarea { min-height: 110px; resize: vertical; }
+    .row { display: flex; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+    .row > div { flex: 1; min-width: 150px; }
+    .examples { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 13px; color: #5f6b7a; }
+    .examples button { border: 1px solid #c5ced8; background: #f4f6f8; border-radius: 14px; padding: 4px 12px; font-size: 13px; cursor: pointer; }
+    .actions { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .actions button { padding: 10px 18px; border-radius: 6px; font: inherit; font-weight: 600; cursor: pointer; border: 1px solid #1f4e79; }
+    #classify { background: #1f4e79; color: #fff; }
+    #triage { background: #fff; color: #1f4e79; }
+    button:disabled { opacity: 0.5; cursor: wait; }
+    .hint { font-size: 12px; color: #5f6b7a; margin-top: 8px; }
+    #result { display: none; }
+    .headline { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+    .badge { padding: 5px 14px; border-radius: 16px; font-weight: 700; font-size: 15px; background: #e8f1fb; color: #1f4e79; }
+    .badge.high { background: #fde8e8; color: #9b1c1c; }
+    .badge.medium { background: #fdf3e6; color: #9a5b13; }
+    .badge.low { background: #e7f5ee; color: #1e6b45; }
+    .badge.in_review { background: #f1ecf9; color: #5b3a8c; }
+    .badge.assigned, .badge.routed { background: #e7f5ee; color: #1e6b45; }
+    dl { display: grid; grid-template-columns: 150px 1fr; gap: 8px 12px; margin: 0; }
+    dt { color: #5f6b7a; font-size: 14px; }
+    dd { margin: 0; }
+    h2 { font-size: 15px; margin: 20px 0 8px; color: #3e4c59; }
+    ol { margin: 0; padding-left: 20px; }
+    li { margin-bottom: 6px; font-size: 14px; }
+    code { background: #f4f6f8; padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+    .error { color: #9b1c1c; }
+    footer { font-size: 13px; color: #5f6b7a; }
+    footer a { color: #1f4e79; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>AidRoute</h1>
+  <p class="intro">Type a request for help and see how it is classified and where it is routed.</p>
+
+  <div class="card">
+    <label for="text">Request</label>
+    <textarea id="text" placeholder="For example: We lost our income and have no groceries for the kids this week."></textarea>
+    <div class="examples">
+      Try:
+      <button type="button" data-example="I lost my job and we have had no groceries for three days. My kids are hungry.">food</button>
+      <button type="button" data-example="We were evicted today and have nowhere to sleep tonight.">shelter</button>
+      <button type="button" data-example="I ran out of my insulin and cannot afford the refill until next month.">medical</button>
+      <button type="button" data-example="My landlord changed the locks while I was at work and my things are inside.">legal</button>
+      <button type="button" data-example="My son is falling behind in math and I cannot afford a tutor.">education</button>
+      <button type="button" data-example="Since my husband passed I cannot sleep and I think I need to talk to someone.">mental health</button>
+    </div>
+
+    <div class="row">
+      <div>
+        <label for="city">City</label>
+        <select id="city">
+          <option>Austin</option>
+          <option>Round Rock</option>
+          <option>San Marcos</option>
+          <option>Georgetown</option>
+          <option>Pflugerville</option>
+          <option value="Boston">Boston (outside service area)</option>
+          <option value="">Not given</option>
+        </select>
+      </div>
+      <div>
+        <label for="source">Came in by</label>
+        <select id="source">
+          <option value="web_form">Web form</option>
+          <option value="phone">Phone</option>
+          <option value="walk_in">Walk-in</option>
+        </select>
+      </div>
+      <div>
+        <label for="model">Model</label>
+        <select id="model">
+          <option value="gpt-4o">GPT-4o</option>
+          <option value="llama3">Llama 3.3</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="classify" type="button">Classify and route</button>
+      <button id="triage" type="button">Run full triage</button>
+    </div>
+    <p class="hint">
+      <b>Classify and route</b> puts the request in a team queue.
+      <b>Run full triage</b> also looks up program rules, matches a volunteer, and either assigns the case
+      or sends it to a human reviewer (always with GPT-4o).
+    </p>
+  </div>
+
+  <div class="card" id="result"></div>
+
+  <footer>
+    Every request you send here is saved. See the full API at <a href="/docs">/docs</a>.
+  </footer>
+</main>
+
+<script>
+  const result = document.getElementById("result");
+  const buttons = [document.getElementById("classify"), document.getElementById("triage")];
+
+  // The example buttons just fill in the text box
+  document.querySelectorAll("[data-example]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      document.getElementById("text").value = button.dataset.example;
+    });
+  });
+
+  // Small helper to create an element with text. textContent is used everywhere,
+  // so whatever the user typed is shown as plain text and never run as HTML.
+  function el(tag, text, className) {
+    const node = document.createElement(tag);
+    if (text !== undefined) node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  }
+
+  function addRow(list, label, value) {
+    if (value === null || value === undefined || value === "") return;
+    list.append(el("dt", label), el("dd", String(value)));
+  }
+
+  function showMessage(text, className) {
+    result.style.display = "block";
+    result.replaceChildren(el("p", text, className));
+  }
+
+  function showResult(data, isTriage) {
+    const headline = el("div", undefined, "headline");
+    headline.append(el("span", data.category.replace("_", " "), "badge"));
+    headline.append(el("span", data.urgency + " urgency", "badge " + data.urgency));
+    headline.append(el("span", data.status.replace("_", " "), "badge " + data.status));
+
+    const details = el("dl");
+    addRow(details, "Request id", data.id || data.request_id);
+    addRow(details, "Confidence", Math.round(data.confidence * 100) + "%");
+    addRow(details, "Routed to", data.queue);
+    addRow(details, "Why", data.reason);
+    addRow(details, "Sent to review because", data.review_reason);
+    addRow(details, "Case created", data.case_id ? "#" + data.case_id : "");
+
+    result.replaceChildren(headline, details);
+
+    if (isTriage) {
+      result.append(el("h2", "What the agent did"));
+      const steps = el("ol");
+      data.steps.forEach(function (step) {
+        const item = el("li");
+        item.append(el("code", step.action));
+        if (step.output.error) item.append(" " + step.output.error);
+        if (step.output.volunteer) item.append(" assigned to " + step.output.volunteer);
+        if (step.output.volunteers) item.append(" found " + step.output.volunteers.length + " volunteers");
+        steps.append(item);
+      });
+      result.append(steps);
+
+      if (data.summary) {
+        result.append(el("h2", "Summary for staff"), el("p", data.summary));
+      }
+    }
+    result.style.display = "block";
+  }
+
+  async function send(isTriage) {
+    const text = document.getElementById("text").value.trim();
+    if (text.length < 10) {
+      showMessage("Please type a request of at least 10 characters.", "error");
+      return;
+    }
+
+    const body = { text: text, source: document.getElementById("source").value };
+    const city = document.getElementById("city").value;
+    if (city) body.city = city;
+
+    const url = isTriage ? "/triage" : "/requests?model=" + document.getElementById("model").value;
+
+    buttons.forEach(function (button) { button.disabled = true; });
+    showMessage(isTriage ? "The agent is working, this takes about 10 seconds..." : "Classifying...");
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        showMessage("Something went wrong: " + JSON.stringify(data.detail), "error");
+      } else {
+        showResult(data, isTriage);
+      }
+    } catch (error) {
+      showMessage("Could not reach the API: " + error.message, "error");
+    }
+    buttons.forEach(function (button) { button.disabled = false; });
+  }
+
+  document.getElementById("classify").addEventListener("click", function () { send(false); });
+  document.getElementById("triage").addEventListener("click", function () { send(true); });
+</script>
+</body>
+</html>

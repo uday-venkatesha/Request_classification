@@ -43,6 +43,12 @@ def test_health(client):
     assert client.get("/health").json() == {"status": "ok"}
 
 
+def test_home_page_loads(client):
+    response = client.get("/")
+    assert response.status_code == 200
+    assert "AidRoute" in response.text
+
+
 def test_request_is_classified_saved_and_routed(client, monkeypatch):
     result = Classification(reason="No food at home.", category="food", urgency="high", confidence=0.9)
     monkeypatch.setattr(main, "classify", lambda text, model: result)

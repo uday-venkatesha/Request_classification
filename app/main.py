@@ -1,9 +1,10 @@
 import json
 from contextlib import asynccontextmanager
+from pathlib import Path
 from typing import Literal
 
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import StreamingResponse
+from fastapi.responses import FileResponse, StreamingResponse
 from sqlalchemy import select
 
 from app import agent, rag
@@ -27,6 +28,12 @@ async def lifespan(app):
 
 app = FastAPI(title="AidRoute", description="Classifies and routes aid requests for a nonprofit.",
               lifespan=lifespan)
+
+
+@app.get("/", include_in_schema=False)
+def home():
+    # A small page for trying the service in a browser
+    return FileResponse(Path(__file__).parent / "static" / "index.html")
 
 
 @app.get("/health")
