@@ -55,7 +55,7 @@ def make_features(request, volunteer, past_acceptance_rate):
     }
 
 
-def train(features=None):
+def train(features=None, save=True):
     """Trains a new model and saves it to the match_models table. Returns (model, auc)."""
     if features is None:
         features = pd.read_sql("SELECT * FROM match_features", engine)
@@ -69,11 +69,12 @@ def train(features=None):
     model.fit(x_train, y_train)
     auc = roc_auc_score(y_test, model.predict_proba(x_test)[:, 1])
 
-    saved = io.BytesIO()
-    joblib.dump(model, saved)
-    with SessionLocal() as session:
-        session.add(MatchModel(auc=auc, trained_on_rows=len(features), data=saved.getvalue()))
-        session.commit()
+    if save:
+        saved = io.BytesIO()
+        joblib.dump(model, saved)
+        with SessionLocal() as session:
+            session.add(MatchModel(auc=auc, trained_on_rows=len(features), data=saved.getvalue()))
+            session.commit()
     return model, auc
 
 
