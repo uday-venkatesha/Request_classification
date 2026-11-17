@@ -1,0 +1,4 @@
+[tool.pytest.ini_options]
+# lets the tests import the "app" package when pytest is started from the project folder
+pythonpath = ["."]
+testpaths = ["tests"]
