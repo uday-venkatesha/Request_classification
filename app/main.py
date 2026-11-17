@@ -1,12 +1,17 @@
+import json
 from typing import Literal
 
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import StreamingResponse
 from sqlalchemy import select
 
+from app import rag
 from app.classifier import classify
 from app.db import SessionLocal
 from app.models import CITY_COORDS, AidRequest
-from app.schemas import Category, RequestIn, RequestOut
+from app.schemas import AskIn, Category, RequestIn, RequestOut
+
+ModelName = Literal["gpt-4o", "llama3"]
 
 app = FastAPI(title="AidRoute", description="Classifies and routes aid requests for a nonprofit.")
 
@@ -17,7 +22,7 @@ def health():
 
 
 @app.post("/requests", response_model=RequestOut)
-def create_request(body: RequestIn, model: Literal["gpt-4o", "llama3"] = "gpt-4o"):
+def create_request(body: RequestIn, model: ModelName = "gpt-4o"):
     try:
         result = classify(body.text, model)
     except Exception as e:
@@ -51,3 +56,26 @@ def get_queue(category: Category):
         ).all()
         rows = sorted(rows, key=lambda r: (urgency_order.get(r.urgency, 3), r.created_at))
         return [{"id": r.id, "urgency": r.urgency, "city": r.city, "text": r.text[:120]} for r in rows]
+
+
+@app.post("/ask")
+def ask(body: AskIn, model: ModelName = "gpt-4o", stream: bool = True):
+    """Answers a question from the program documents.
+
+    With stream=true the answer arrives word by word as server-sent events.
+    With stream=false it comes back as one JSON object."""
+    if not stream:
+        try:
+            return rag.answer(body.question, model)
+        except Exception as e:
+            raise HTTPException(status_code=502, detail=f"Assistant failed: {e}")
+
+    def events():
+        # Each server-sent event is one line starting with "data: " followed by a blank line
+        try:
+            for event in rag.answer_stream(body.question, model):
+                yield f"data: {json.dumps(event)}\n\n"
+        except Exception as e:
+            yield f"data: {json.dumps({'done': True, 'error': str(e)})}\n\n"
+
+    return StreamingResponse(events(), media_type="text/event-stream")

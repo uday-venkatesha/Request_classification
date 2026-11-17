@@ -147,34 +147,50 @@ def list_sources(chunks):
     return sources
 
 
-def answer(question, model_name="gpt-4o", prompt_version="v1", guardrails=True):
-    # guardrails=False turns off the distance and citation checks.
-    # We only do that in the evaluation (3.5) to measure how much the guardrails help.
-    # PII masking and the crisis check are never turned off.
+def run_checks(question, guardrails=True):
+    # Everything that happens before the LLM is called. Both answer() and answer_stream() use it,
+    # so the guardrails are identical for normal and streamed answers.
+    # Returns (masked question, chunks, early_result). early_result is set when a guardrail
+    # has already decided the reply and the LLM must not be called.
 
     # Step 1: hide personal data
     question = mask_pii(question)
 
     # Step 2: crisis check comes first, before anything else can go wrong
     if is_crisis(question):
-        return {"answer": CRISIS_ANSWER, "sources": [], "guardrail": "crisis"}
+        return question, [], {"answer": CRISIS_ANSWER, "sources": [], "guardrail": "crisis"}
 
     # Step 3: find the closest chunks. If even the best one is far away,
     # the question isn't about our programs, so we refuse without calling the LLM (free and safe).
     chunks = retrieve(question)
     best_distance = chunks[0][1]
     if guardrails and best_distance > MAX_DISTANCE:
-        return {"answer": FALLBACK_ANSWER, "sources": [], "guardrail": "off_topic"}
+        return question, chunks, {"answer": FALLBACK_ANSWER, "sources": [], "guardrail": "off_topic"}
+
+    return question, chunks, None
+
+
+def build_messages(question, chunks, prompt_version):
+    return [
+        {"role": "system", "content": build_prompt(chunks, prompt_version)},
+        {"role": "user", "content": question},
+    ]
+
+
+def answer(question, model_name="gpt-4o", prompt_version="v1", guardrails=True):
+    # guardrails=False turns off the distance and citation checks.
+    # We only do that in the evaluation (evals/eval_rag.py) to measure how much the guardrails help.
+    # PII masking and the crisis check are never turned off.
+    question, chunks, early_result = run_checks(question, guardrails)
+    if early_result:
+        return early_result
 
     # Step 4: ask the LLM to answer using only these chunks.
     # temperature=0 so the same question always gets the same answer.
     client, model = get_client(model_name)
     response = client.chat.completions.create(
         model=model,
-        messages=[
-            {"role": "system", "content": build_prompt(chunks, prompt_version)},
-            {"role": "user", "content": question},
-        ],
+        messages=build_messages(question, chunks, prompt_version),
         temperature=0,
     )
     answer_text = response.choices[0].message.content
@@ -184,6 +200,39 @@ def answer(question, model_name="gpt-4o", prompt_version="v1", guardrails=True):
         return {"answer": FALLBACK_ANSWER, "sources": [], "guardrail": "no_citation"}
 
     return {"answer": answer_text, "sources": list_sources(chunks), "guardrail": None}
+
+
+def answer_stream(question, model_name="gpt-4o", prompt_version="v1"):
+    # Same as answer(), but gives the text back piece by piece so the person sees
+    # the first words in under a second instead of waiting for the whole answer.
+    # Yields {"token": "..."} for each piece and one final {"done": True, ...} event.
+    question, chunks, early_result = run_checks(question)
+    if early_result:
+        yield {"token": early_result["answer"]}
+        yield {"done": True, "sources": [], "guardrail": early_result["guardrail"]}
+        return
+
+    client, model = get_client(model_name)
+    stream = client.chat.completions.create(
+        model=model,
+        messages=build_messages(question, chunks, prompt_version),
+        temperature=0,
+        stream=True,
+    )
+    answer_text = ""
+    for event in stream:
+        if event.choices and event.choices[0].delta.content:
+            token = event.choices[0].delta.content
+            answer_text += token
+            yield {"token": token}
+
+    # The citation check needs the whole answer, so it can only run at the end.
+    # If it fails, "replace_with" tells the page to swap the streamed text for the fallback.
+    if not has_citation(answer_text):
+        yield {"done": True, "sources": [], "guardrail": "no_citation", "replace_with": FALLBACK_ANSWER}
+        return
+
+    yield {"done": True, "sources": list_sources(chunks), "guardrail": None}
 
 
 if __name__ == "__main__":

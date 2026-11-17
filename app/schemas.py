@@ -27,3 +27,7 @@ class RequestOut(BaseModel):
     reason: str
     status: str
     queue: str
+
+
+class AskIn(BaseModel):
+    question: str = Field(min_length=3, max_length=1000, examples=["How often can I visit the food pantry?"])
