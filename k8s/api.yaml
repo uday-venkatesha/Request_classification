@@ -13,6 +13,11 @@ spec:
       labels:
         app: aidroute-api
     spec:
+      # The API creates its tables at startup, so it must not start before the database answers
+      initContainers:
+        - name: wait-for-postgres
+          image: pgvector/pgvector:pg16
+          command: ["sh", "-c", "until pg_isready -h postgres -U aid -d aidroute; do sleep 2; done"]
       containers:
         - name: api
           image: aidroute:latest

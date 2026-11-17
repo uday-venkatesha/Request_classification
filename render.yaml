@@ -1,0 +1,16 @@
+# Render blueprint: in the Render dashboard choose New > Blueprint and pick this repository.
+# The three secrets are typed into the dashboard, never stored in git.
+services:
+  - type: web
+    name: aidroute-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true  # every push to main is deployed
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: MESH_API_KEY
+        sync: false
