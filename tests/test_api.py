@@ -1,5 +1,6 @@
 """Tests for the API and the safety rules. No test calls a real LLM:
 the model calls are replaced with fakes, so the tests are free, fast and repeatable."""
+import json
 import os
 from types import SimpleNamespace
 
@@ -131,6 +132,106 @@ def test_too_short_request_is_rejected(client):
 
 def test_unknown_queue_is_rejected(client):
     assert client.get("/queues/pizza").status_code == 422
+
+
+# ---------- end to end: request form -> agent -> volunteer portal ----------
+
+def scripted_llm(steps):
+    # A fake LLM for the agent. Each call returns the next step of the script:
+    # a (tool name, arguments) pair means "call this tool", plain text is the final summary.
+    remaining = list(steps)
+
+    def create(**kwargs):
+        step = remaining.pop(0)
+        if isinstance(step, str):
+            message = SimpleNamespace(content=step, tool_calls=None)
+        else:
+            name, arguments = step
+            function = SimpleNamespace(name=name, arguments=json.dumps(arguments))
+            message = SimpleNamespace(content=None, tool_calls=[SimpleNamespace(id="call-1", function=function)])
+        return SimpleNamespace(choices=[SimpleNamespace(message=message)])
+
+    return SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create))), "fake-model"
+
+
+@pytest.fixture
+def volunteer_id():
+    # One volunteer for the test, removed again afterwards together with everything assigned to them
+    with SessionLocal() as session:
+        volunteer = Volunteer(name="Test Volunteer", email="e2e.volunteer@example.org", skills=["food", "medical"],
+                              availability=["weekends"], city="Austin", active=True)
+        session.add(volunteer)
+        session.commit()
+        new_id = volunteer.id
+    yield new_id
+    with SessionLocal() as session:
+        session.execute(delete(Case).where(Case.volunteer_id == new_id))
+        session.execute(delete(Volunteer).where(Volunteer.id == new_id))
+        session.commit()
+
+
+def remove_request(request_id):
+    with SessionLocal() as session:
+        session.execute(delete(AuditLog).where(AuditLog.request_id == request_id))
+        session.execute(delete(Case).where(Case.request_id == request_id))
+        session.execute(delete(AidRequest).where(AidRequest.id == request_id))
+        session.commit()
+
+
+def test_request_from_the_form_reaches_the_volunteer_portal(client, monkeypatch, volunteer_id):
+    food = Classification(reason="No food at home.", category="food", urgency="high", confidence=0.9)
+    monkeypatch.setattr(agent, "classify", lambda text: food)
+    monkeypatch.setattr(agent, "top_volunteers", lambda request: [{"volunteer_id": volunteer_id}])
+    monkeypatch.setattr(agent, "get_client", lambda name: scripted_llm([
+        ("classify_request", {}),
+        ("find_volunteers", {}),
+        ("create_case", {"volunteer_id": volunteer_id}),
+        "Family needs groceries. Assigned to Test Volunteer.",
+    ]))
+
+    # 1. Someone fills in the request form
+    form = {"text": "We have no food at home for the kids.", "city": "Austin", "contact": "512-555-0199"}
+    request_id = client.post("/intake", json=form).json()["request_id"]
+
+    try:
+        # 2. The agent has run in the background and the case is on the volunteer's page
+        cases = client.get(f"/volunteers/{volunteer_id}/cases").json()
+        assert len(cases) == 1
+        assert cases[0]["category"] == "food"
+        assert cases[0]["contact"] == "512-555-0199"
+        assert cases[0]["notes"] == "Family needs groceries. Assigned to Test Volunteer."
+
+        # 3. Every step was written to the audit log
+        steps = [step["action"] for step in client.get(f"/requests/{request_id}/audit").json()]
+        assert steps == ["classify_request", "find_volunteers", "create_case"]
+
+        # 4. The volunteer accepts
+        accepted = client.post(f"/cases/{cases[0]['case_id']}/respond", json={"action": "accept"}).json()
+        assert accepted["case_status"] == "accepted"
+    finally:
+        remove_request(request_id)
+
+
+def test_medical_request_from_the_form_waits_for_a_reviewer(client, monkeypatch, volunteer_id):
+    # The fake LLM tries to assign a medical case directly. The rules in code must stop it.
+    medical = Classification(reason="Out of insulin.", category="medical", urgency="high", confidence=0.95)
+    monkeypatch.setattr(agent, "classify", lambda text: medical)
+    monkeypatch.setattr(main, "top_volunteers", lambda request: [])  # the review page asks for suggestions
+    monkeypatch.setattr(agent, "get_client", lambda name: scripted_llm([
+        ("classify_request", {}),
+        ("create_case", {"volunteer_id": volunteer_id}),
+        "Assigned to Test Volunteer.",
+    ]))
+
+    request_id = client.post("/intake", json={"text": "I ran out of insulin yesterday.", "city": "Austin"}).json()["request_id"]
+
+    try:
+        assert client.get(f"/volunteers/{volunteer_id}/cases").json() == []  # nothing reached the volunteer
+
+        waiting = [r for r in client.get("/review").json() if r["id"] == request_id]
+        assert "sensitive category" in waiting[0]["review_reason"]
+    finally:
+        remove_request(request_id)
 
 
 # ---------- guardrails ----------
