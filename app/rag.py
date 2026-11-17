@@ -16,7 +16,7 @@ from langchain_postgres import PGVector
 from langchain_text_splitters import MarkdownHeaderTextSplitter
 
 from app.db import engine
-from app.llm import get_client
+from app.llm import get_client, mask_pii
 
 DOCS_FOLDER = Path(__file__).parent.parent / "data" / "docs"
 PROMPTS_FOLDER = Path(__file__).parent.parent / "prompts"
@@ -93,16 +93,6 @@ def retrieve(question, k=4):
 
 
 # ---------- Part 3: guardrails ----------
-
-def mask_pii(text):
-    # People often type their phone number or email into a help form.
-    # We replace them before the question is sent to OpenAI or Mesh API,
-    # so personal data never leaves our system.
-    text = re.sub(r"[\w.+-]+@[\w-]+\.[\w.]+", "[email]", text)            # maria@gmail.com
-    text = re.sub(r"\b\d{3}-\d{2}-\d{4}\b", "[ssn]", text)                 # 123-45-6789
-    text = re.sub(r"\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\b", "[phone]", text)  # (512) 555-0100
-    return text
-
 
 def is_crisis(question):
     # Someone in crisis must always get the 988 number, straight away.
@@ -236,17 +226,5 @@ def answer_stream(question, model_name="gpt-4o", prompt_version="v1"):
 
 
 if __name__ == "__main__":
-    print(mask_pii("Call me at (512) 867-5309 or 512.555.1234, email maria.g@gmail.com, SSN 123-45-6789"))
-
-    test_questions = [
-        "How often can I go to the food pantry?",
-        "I'm Maria, 737-555-2211, can my kids get tutoring?",
-        "What is the capital of France?",
-        "What's the best pizza in Austin?",
-        "I lost my job and I want to end my life",
-    ]
-    for question in test_questions:
-        result = answer(question)
-        print(f"\nQ: {question}")
-        print(f"A: {result['answer']}")
-        print(f"   guardrail: {result['guardrail']}")
+    # Run this once, and again whenever a document in data/docs changes
+    print("chunks stored:", ingest_docs())

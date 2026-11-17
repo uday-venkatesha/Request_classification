@@ -8,9 +8,10 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+import mlflow
 import pandas as pd
 
-from app.classifier import classify
+from app.classifier import PROMPTS, classify
 
 RESULTS = Path("data/eval/results")
 
@@ -32,10 +33,20 @@ def evaluate(df, model_name, prompt_version):
     df["pred_category"], df["pred_urgency"], df["confidence"] = zip(*preds)
     df["correct"] = df["pred_category"] == df["category"]
 
+    # The most dangerous mistake: a truly urgent request that the model calls "low"
+    urgent = df[df["urgency"] == "high"]
+    metrics = {
+        "category_accuracy": df["correct"].mean(),
+        "urgency_accuracy": (df["pred_urgency"] == df["urgency"]).mean(),
+        "urgent_marked_low_rate": (urgent["pred_urgency"] == "low").mean(),
+        "failed_calls": (df["pred_category"] == "error").sum(),
+    }
+
     print(f"\n===== {model_name} | prompt {prompt_version} | {len(df)} requests =====")
-    print(f"category accuracy: {df['correct'].mean():.1%}")
-    print(f"urgency accuracy:  {(df['pred_urgency'] == df['urgency']).mean():.1%}")
-    print(f"failed calls:      {(df['pred_category'] == 'error').sum()}")
+    print(f"category accuracy: {metrics['category_accuracy']:.1%}")
+    print(f"urgency accuracy:  {metrics['urgency_accuracy']:.1%}")
+    print(f"urgent marked low: {metrics['urgent_marked_low_rate']:.1%}")
+    print(f"failed calls:      {metrics['failed_calls']}")
     print(f"avg confidence when right: {df.loc[df['correct'], 'confidence'].mean():.2f}, "
           f"when wrong: {df.loc[~df['correct'], 'confidence'].mean():.2f}")
 
@@ -51,13 +62,20 @@ def evaluate(df, model_name, prompt_version):
 
     RESULTS.mkdir(parents=True, exist_ok=True)
     df.to_csv(RESULTS / f"{model_name}_{prompt_version}.csv", index=False)
+
+    # Record the run in MLflow, with the exact prompt file, so prompt versions can be compared later
+    mlflow.set_experiment("classifier")
+    with mlflow.start_run(run_name=f"{model_name}-{prompt_version}"):
+        mlflow.log_params({"model": model_name, "prompt_version": prompt_version, "requests": len(df)})
+        mlflow.log_metrics(metrics)
+        mlflow.log_artifact(str(PROMPTS / f"classifier_{prompt_version}.txt"))
     return df
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--models", nargs="+", default=["gpt-4o", "llama3"])
-    parser.add_argument("--prompt", default="v1")
+    parser.add_argument("--prompt", default="v2")
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
 

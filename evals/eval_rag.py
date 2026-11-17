@@ -13,6 +13,7 @@ python -m evals.eval_rag --model llama3
 import argparse
 from pathlib import Path
 
+import mlflow
 import pandas as pd
 from langchain_openai import ChatOpenAI
 from ragas import EvaluationDataset, evaluate
@@ -102,3 +103,11 @@ if __name__ == "__main__":
     print(f"context precision (retrieval): {context_precision:.2f}\n")
     table = pd.DataFrame({"baseline": baseline, "guardrails": guarded})
     print(table.round(2).to_string())
+
+    # One MLflow run per setup, so the two can be compared side by side
+    mlflow.set_experiment("rag")
+    for name, scores in [("baseline", baseline), ("guardrails", guarded)]:
+        with mlflow.start_run(run_name=f"{args.model}-{name}"):
+            mlflow.log_params({"model": args.model, "setup": name, "questions": len(questions)})
+            mlflow.log_metrics(scores)
+            mlflow.log_metric("context_precision", context_precision)

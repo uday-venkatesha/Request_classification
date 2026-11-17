@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from app.llm import get_client
+from app.llm import get_client, mask_pii
 from app.schemas import Classification
 
 PROMPTS = Path(__file__).parent.parent / "prompts"
@@ -10,13 +10,13 @@ def load_prompt(version):
     return (PROMPTS / f"classifier_{version}.txt").read_text()
 
 
-def classify(text, model_name="gpt-4o", prompt_version="v1"):
+def classify(text, model_name="gpt-4o", prompt_version="v2"):
     client, model = get_client(model_name)
     response = client.beta.chat.completions.parse(
         model=model,
         messages=[
             {"role": "system", "content": load_prompt(prompt_version)},
-            {"role": "user", "content": text},
+            {"role": "user", "content": mask_pii(text)},
         ],
         response_format=Classification,
         temperature=0,
