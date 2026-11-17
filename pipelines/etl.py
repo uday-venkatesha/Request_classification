@@ -1,11 +1,11 @@
 """Cleans the 3 source system exports and loads them into Postgres.
 
-Full reload: existing rows are wiped and everything is loaded again, so it is safe to re-run.
+Safe to re-run: rows that are already in the database are skipped or updated, never duplicated.
 """
 import json
 
 import pandas as pd
-from sqlalchemy import text
+from sqlalchemy import select
 
 from app.db import SessionLocal, engine
 from app.models import CITY_COORDS, AidRequest, Base, Case, Volunteer
@@ -63,6 +63,7 @@ def clean_volunteers(path):
 def clean_cases(path):
     df = pd.DataFrame(json.loads(open(path).read()))
     cases = pd.DataFrame({
+        "case_ref": df["case_ref"],
         "submission_id": df["submission_id"],
         "volunteer_email": df["volunteer_email"].str.lower(),
         "status": df["outcome"].str.lower().fillna("open"),  # no outcome yet means the case is still open
@@ -79,25 +80,49 @@ def records(df):
 
 
 def load(requests, volunteers, cases):
-    with engine.begin() as conn:
-        conn.execute(text("TRUNCATE requests, volunteers, cases, audit_log RESTART IDENTITY"))
-
+    """Adds new rows and updates changed ones. Nothing is ever deleted, so requests that
+    came in through the API and the audit log are safe when this runs again."""
     with SessionLocal() as session:
-        request_rows = [AidRequest(**r) for r in records(requests)]
-        volunteer_rows = [Volunteer(**v) for v in records(volunteers)]
-        session.add_all(request_rows + volunteer_rows)
-        session.flush()  # fills in the new ids
+        # Requests: the intake form never changes old submissions, so we only add new ones
+        known_submissions = set(session.scalars(select(AidRequest.submission_id)))
+        new_requests = requests[~requests["submission_id"].isin(known_submissions)]
+        session.add_all([AidRequest(**row) for row in records(new_requests)])
 
-        request_ids = {r.submission_id: r.id for r in request_rows}
-        volunteer_ids = {v.email: v.id for v in volunteer_rows}
-        cases["request_id"] = cases["submission_id"].map(request_ids)
-        cases["volunteer_id"] = cases["volunteer_email"].map(volunteer_ids)
-        cases = cases.dropna(subset=["request_id"])  # the request was dropped (empty text)
+        # Volunteers: staff edit the spreadsheet (skills, active or not), so existing rows are updated
+        existing_volunteers = {v.email: v for v in session.scalars(select(Volunteer))}
+        for row in records(volunteers):
+            volunteer = existing_volunteers.get(row["email"])
+            if volunteer is None:
+                session.add(Volunteer(**row))
+            else:
+                for column, value in row.items():
+                    setattr(volunteer, column, value)
 
-        columns = ["request_id", "volunteer_id", "status", "created_at", "closed_at"]
-        session.add_all([Case(**c) for c in records(cases[columns])])
+        session.flush()  # gives the new rows their ids
+
+        # Cases point at requests and volunteers by the old systems' keys,
+        # so we look up our own ids before saving them
+        request_ids = dict(session.execute(select(AidRequest.submission_id, AidRequest.id)).all())
+        volunteer_ids = dict(session.execute(select(Volunteer.email, Volunteer.id)).all())
+        existing_cases = {c.case_ref: c for c in session.scalars(select(Case).where(Case.case_ref.is_not(None)))}
+
+        for row in records(cases):
+            request_id = request_ids.get(row["submission_id"])
+            if request_id is None:  # its request was dropped because the text was empty
+                continue
+            case = existing_cases.get(row["case_ref"])
+            if case is None:
+                session.add(Case(
+                    case_ref=row["case_ref"], request_id=request_id,
+                    volunteer_id=volunteer_ids.get(row["volunteer_email"]),
+                    status=row["status"], created_at=row["created_at"], closed_at=row["closed_at"],
+                ))
+            else:  # an open case may have been accepted or declined since the last run
+                case.status = row["status"]
+                case.closed_at = row["closed_at"]
+
         session.commit()
-    return len(cases)
+        return session.query(AidRequest).count(), session.query(Volunteer).count(), session.query(Case).count()
 
 
 if __name__ == "__main__":
@@ -105,5 +130,5 @@ if __name__ == "__main__":
     requests = clean_intake("data/raw/intake_form_export.csv")
     volunteers = clean_volunteers("data/raw/volunteers.xlsx")
     cases = clean_cases("data/raw/case_management.json")
-    n_cases = load(requests, volunteers, cases)
-    print(f"loaded requests={len(requests)} volunteers={len(volunteers)} cases={n_cases}")
+    n_requests, n_volunteers, n_cases = load(requests, volunteers, cases)
+    print(f"in database: requests={n_requests} volunteers={n_volunteers} cases={n_cases}")

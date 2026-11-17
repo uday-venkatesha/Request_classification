@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from sqlalchemy import ARRAY, JSON, Boolean, DateTime, Float, ForeignKey, Integer, String, Text, func
+from sqlalchemy import ARRAY, JSON, Boolean, DateTime, Float, ForeignKey, Integer, LargeBinary, String, Text, func
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.db import Base, engine
@@ -29,6 +29,7 @@ class AidRequest(Base):
     urgency: Mapped[str | None] = mapped_column(String(10))  # low, medium, high
     confidence: Mapped[float | None] = mapped_column(Float)
     status: Mapped[str] = mapped_column(String(20), default="new")  # new, routed, in_review, assigned, closed
+    review_reason: Mapped[str | None] = mapped_column(Text)  # why the agent sent it to a human
     created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
 
 
@@ -50,6 +51,7 @@ class Case(Base):
     __tablename__ = "cases"
 
     id: Mapped[int] = mapped_column(primary_key=True)
+    case_ref: Mapped[str | None] = mapped_column(String(20), unique=True)  # id from the old case system
     request_id: Mapped[int] = mapped_column(ForeignKey("requests.id"))
     volunteer_id: Mapped[int | None] = mapped_column(ForeignKey("volunteers.id"))
     status: Mapped[str] = mapped_column(String(20), default="open")  # open, accepted, declined, closed
@@ -69,6 +71,18 @@ class AuditLog(Base):
     model: Mapped[str | None] = mapped_column(String(50))
     prompt_version: Mapped[str | None] = mapped_column(String(20))
     created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
+
+
+class MatchModel(Base):
+    """Trained volunteer match models. Kept in the database so the API and the
+    retraining job share them without needing a separate file store."""
+    __tablename__ = "match_models"
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
+    auc: Mapped[float | None] = mapped_column(Float)
+    trained_on_rows: Mapped[int | None] = mapped_column(Integer)
+    data: Mapped[bytes] = mapped_column(LargeBinary)  # the model saved with joblib
 
 
 if __name__ == "__main__":
